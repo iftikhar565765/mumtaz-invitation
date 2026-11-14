@@ -1,0 +1,1351 @@
+/* ═══════════════════════════════════════════════════════════════
+   MUMTAZ · sections.css — the ivory monument suite
+   ---------------------------------------------------------------
+   The invitation is a Makrana-marble card resting in a pavilion
+   at first light: a cusped pishtaq arch crowns it and frames the
+   dawn river, gemstone-inlay cascades spill from its corners,
+   cypress trees stand sentinel at its sides. Paper chapters wear
+   an eight-point star jali ghost; night chapters glow with gold
+   lattice under a lapis dusk. Every colour is a token overwritten
+   at runtime by main.js applyTheme().
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ═══ SCENE FOUNDATION ══════════════════════════════════════════ */
+
+.scene {
+  position: relative;
+  padding: var(--scene-pad-y) var(--scene-pad-x);
+  background-color: var(--ivory);
+  overflow: hidden;
+}
+
+.scene-body {
+  position: relative;
+  z-index: 2;
+  max-width: var(--measure);
+  margin-inline: auto;
+  text-align: center;
+}
+
+/* the eight-point star jali — the geometry of the marble screens,
+   repeated as data-URI tiles in the scene backgrounds below */
+
+/* paper chapters — Makrana ivory with an ink jali ghost */
+.scene--story, .scene--details, .scene--palette,
+.scene--venue, .scene--rsvp {
+  overflow-x: hidden;
+  background-color: var(--ivory);
+  background-image:
+    linear-gradient(112deg, transparent 46%, color-mix(in srgb, var(--charcoal) 7%, transparent) 47% 48%, transparent 49%),
+    linear-gradient(72deg, transparent 62%, color-mix(in srgb, var(--charcoal) 5%, transparent) 63% 64%, transparent 65%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23332C24' stroke-opacity='.055'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* night chapters — lapis dusk under a gold lattice */
+.scene--std, .scene--itinerary, .scene--countdown, .scene--closing {
+  background-color: var(--night);
+  background-image:
+    radial-gradient(120% 68% at 50% -8%, color-mix(in srgb, var(--wine) 44%, transparent) 0%, transparent 60%),
+    radial-gradient(80% 44% at 50% 110%, color-mix(in srgb, var(--crimson) 10%, transparent) 0%, transparent 66%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23C6A14F' stroke-opacity='.08'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* the chapter divider — a running cusped-dome frieze where two
+   grounds meet */
+.scene:not(.scene--hero)::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(340px, 64%);
+  height: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='32'%3E%3Cg fill='none' stroke='%23A5823C' stroke-opacity='.55'%3E%3Cpath d='M 20 28 C 20 19 24 13.5 28 12 C 32 13.5 36 19 36 28'/%3E%3Cpath d='M 23 28 C 23 22 25 17.8 28 16.4 C 31 17.8 33 22 33 28'/%3E%3Cpath d='M 28 12 C 28 9.6 28.6 8 28 5.6'/%3E%3Ccircle cx='28' cy='4.4' r='1.4' fill='%23A5823C' fill-opacity='.55'/%3E%3Cpath d='M 2 28 H 14 M 42 28 H 54'/%3E%3Ccircle cx='10' cy='28' r='1.2' fill='%23A5823C' fill-opacity='.55'/%3E%3Ccircle cx='46' cy='28' r='1.2' fill='%23A5823C' fill-opacity='.55'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: center;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ═══ Ⅰ · THE PISHTAQ — the invitation card in the dawn light ═══ */
+
+.scene--hero {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0;
+}
+
+.kstage {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(64px, 9.5vw, 110px) clamp(14px, 4vw, 44px) clamp(70px, 9.5vw, 116px);
+  background-color: var(--ivory);
+  background-image:
+    radial-gradient(110% 58% at 50% -4%, color-mix(in srgb, var(--rose) 52%, transparent) 0%, transparent 60%),
+    radial-gradient(64% 36% at 50% 104%, color-mix(in srgb, var(--crimson) 14%, transparent) 0%, transparent 66%),
+    linear-gradient(178deg, var(--parchment) 0%, var(--ivory) 34%, var(--ivory) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23A5823C' stroke-opacity='.06'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
+}
+/* first-light halo behind the card */
+.kstage::before {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: min(560px, 88vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    color-mix(in srgb, white 55%, transparent) 0%,
+    color-mix(in srgb, var(--rose) 30%, transparent) 40%,
+    transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+/* the garden wall — hairline frame at the stage foot */
+.kstage::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-line) 16%, var(--gold-line) 84%, transparent);
+  z-index: 3;
+}
+
+.kstage__frame {
+  position: absolute;
+  inset: clamp(12px, 2vw, 20px);
+  border: 1px solid color-mix(in srgb, var(--champagne) 34%, transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+.kstage__frame::before,
+.kstage__frame::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 12px;
+  border: 1px solid var(--gold-line);
+  border-radius: 2px 50% 50% 2px;
+  rotate: 8deg;
+  background: var(--ivory);
+}
+.kstage__frame::before { top: -6px; left: calc(50% - 6px); }
+.kstage__frame::after  { bottom: -7px; left: calc(50% - 6px); }
+
+.kstage__mandala {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(96%, 760px);
+  opacity: .1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── the card — Makrana paper floating in the dawn light ──────── */
+
+.kcard {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 640px);
+  margin-inline: auto;
+  background:
+    linear-gradient(168deg,
+      color-mix(in srgb, var(--paper-raised) 97%, var(--parchment)) 0%,
+      var(--paper-raised) 52%,
+      color-mix(in srgb, var(--ivory) 82%, var(--parchment) 18%) 100%);
+  border-radius: var(--card-radius);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--champagne-soft) 58%, transparent),
+    var(--shadow-card);
+}
+/* a faint star jali printed into the paper */
+.kcard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23332C24' stroke-opacity='.045'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* ── the crown — the pishtaq arch over the dawn river ─────────── */
+
+.kcard__crown {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(18px, 4vw, 34px) 8% 0;
+}
+
+.kcard__pishtaq {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 16px 34px rgba(27, 46, 74, .28));
+}
+.pishtaq-photo {
+  filter: saturate(1.04) contrast(.98);
+}
+.pishtaq-frame { fill: none; }
+.pishtaq-frame--inner { stroke: var(--champagne-soft); stroke-width: 2; }
+.pishtaq-frame--mid   { stroke: var(--gold-line);      stroke-width: 1.1; }
+.pishtaq-frame--outer { stroke: var(--champagne-soft); stroke-width: 1.4; opacity: .85; }
+
+.kcard-medallion { display: grid; justify-items: center; margin-top: calc(-1 * clamp(16px, 3.6vw, 30px)); }
+.kcard-medallion__art {
+  width: clamp(58px, 12%, 84px);
+  height: auto;
+  border-radius: 50%;
+  filter: drop-shadow(0 3px 10px rgba(169, 80, 46, .3));
+}
+
+.kcard-shloka {
+  margin-top: 2%;
+  font-family: var(--font-urdu);
+  direction: rtl;
+  line-height: 1.9;
+  font-size: clamp(.92rem, 2.7vw, 1.15rem);
+  color: var(--burgundy);
+}
+
+.kcard-blessing {
+  margin-top: 2.2%;
+  color: var(--champagne-soft);
+  letter-spacing: .26em;
+  font-size: clamp(.55rem, 1.7vw, .7rem);
+}
+
+.kcard-invite {
+  margin-top: 2%;
+  font-family: var(--font-ui);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: clamp(.6rem, 1.9vw, .78rem);
+  color: var(--ink-soft);
+}
+
+/* inlay-rule divider */
+.kcard-rule {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 3.4%;
+  color: var(--champagne);
+}
+.kcard-rule i {
+  display: block;
+  width: clamp(40px, 12%, 74px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--paper-line));
+}
+.kcard-rule i:last-child { transform: scaleX(-1); }
+.kcard-rule svg { width: 13px; height: 13px; fill: var(--champagne); }
+.kcard-rule--crown { margin-top: auto; padding-bottom: clamp(10px, 2vw, 18px); }
+
+/* the body — names and particulars on the paper */
+.kcard__rect {
+  position: relative;
+  margin-inline: 5.76%;
+  border-left: 1px solid var(--gold-faint);
+  border-right: 1px solid var(--gold-faint);
+  padding: clamp(26px, 5.6vw, 46px) clamp(18px, 6vw, 52px) clamp(30px, 6vw, 52px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* the floor — a plinth rule with a centre bud */
+.kcard__rect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 7px;
+  background:
+    linear-gradient(90deg, transparent 0 46%, var(--paper-line) 46% 54%, transparent 54%) top / 100% 1px no-repeat;
+}
+
+.kcard-names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .2rem;
+  outline: none;
+}
+
+.kcard-name {
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-size: clamp(3rem, 10.5vw, 5.6rem);
+  line-height: 1.04;
+  background: linear-gradient(172deg,
+    color-mix(in srgb, var(--burgundy) 72%, var(--crimson) 28%) 8%,
+    color-mix(in srgb, var(--burgundy) 90%, var(--wine) 10%) 44%,
+    var(--burgundy) 62%,
+    color-mix(in srgb, var(--burgundy-deep) 82%, var(--champagne-soft) 18%) 92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 12px color-mix(in srgb, var(--crimson) 22%, transparent));
+}
+
+.kcard-and {
+  font-family: var(--font-editorial);
+  font-size: clamp(.8rem, 2.4vw, 1.05rem);
+  letter-spacing: .5em;
+  text-indent: .5em;
+  text-transform: uppercase;
+  color: var(--champagne-soft);
+  padding-block: .5rem;
+}
+
+/* the ornamental date row — minaret rules flank the numeral */
+.kcard-date { margin-top: clamp(16px, 3.4vw, 26px); }
+.kcard-date-week {
+  color: var(--champagne-soft);
+  font-size: clamp(.6rem, 1.9vw, .74rem);
+}
+.kcard-date-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 2.6vw, 20px);
+  margin-top: 6px;
+}
+.kcard-date-side {
+  color: var(--ink-soft);
+  font-size: clamp(.72rem, 2.4vw, .95rem);
+}
+.kcard-date-num {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.9rem, 9.4vw, 4.9rem);
+  line-height: 1;
+  background: linear-gradient(172deg,
+    color-mix(in srgb, var(--champagne) 62%, #F3E3BC) 10%,
+    color-mix(in srgb, var(--champagne) 82%, #FBEFC9) 34%,
+    var(--champagne) 56%,
+    color-mix(in srgb, var(--champagne-soft) 78%, #7C5A26) 88%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.kcard-date-orn {
+  width: clamp(16px, 4vw, 24px);
+  height: auto;
+  fill: none;
+}
+.kcard-date-orn .gp-minaret { stroke: var(--champagne-soft); stroke-width: 1.6; fill: none; }
+.kcard-date-orn .gp-minaret--thin { stroke: var(--gold-line); stroke-width: 1; fill: none; }
+.kcard-date-orn .gp-minaret-dot { fill: var(--champagne-soft); stroke: none; }
+.kcard-date-orn--flip { transform: scaleX(-1); }
+
+.kcard-lotus { width: clamp(86px, 22%, 128px); margin-top: clamp(14px, 3vw, 22px); }
+.kcard-lotus path { stroke: var(--champagne-soft); fill: none; stroke-width: 1.5; }
+.kcard-lotus .kcard-lotus-rule { stroke: var(--gold-faint); stroke-width: 1; }
+
+.kcard-muhurat {
+  margin-top: clamp(12px, 2.6vw, 18px);
+  color: var(--ink-soft);
+  font-size: clamp(.62rem, 2vw, .76rem);
+  letter-spacing: .22em;
+}
+.kcard-muhurat-sep { color: var(--champagne); }
+
+.kcard-venue { margin-top: clamp(16px, 3.4vw, 26px); display: grid; justify-items: center; gap: 6px; }
+.kcard-venue-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--champagne-soft);
+  font-size: clamp(.54rem, 1.7vw, .66rem);
+}
+.kcard-venue-label svg { width: 9px; height: 9px; fill: var(--champagne); }
+.kcard-venue-name {
+  font-family: var(--font-editorial);
+  font-size: clamp(1.15rem, 3.8vw, 1.7rem);
+  letter-spacing: .05em;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.kcard-venue-address {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: clamp(.68rem, 2vw, .8rem);
+  letter-spacing: .06em;
+  color: var(--ink-soft);
+  max-width: 40ch;
+}
+
+.kcard-closing {
+  margin-top: clamp(16px, 3.4vw, 26px);
+  font-size: clamp(1.5rem, 4.6vw, 2.2rem);
+  color: var(--burgundy);
+}
+
+.kcard-heart { width: 18px; height: 22px; margin-top: 10px; fill: var(--crimson); }
+
+/* ── the corners — every edge of the card alive ───────────────── */
+
+.korn {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+}
+
+.korn--spray-tl { top: -3.4%; left: -6%; width: 21%; opacity: .96; }
+.korn--spray-tr { top: -3.4%; right: -6%; width: 21%; transform: scaleX(-1); opacity: .96; }
+.korn--cascade-tl, .korn--cascade-tr,
+.korn--jasmine-l, .korn--jasmine-r,
+.korn--lotus-bl, .korn--lotus-br,
+.korn--drape {
+  filter: drop-shadow(0 4px 10px rgba(27, 46, 74, .25));
+}
+.korn--cascade-tl { top: 9%; left: -13%; width: 30%; }
+.korn--cascade-tr { top: 9%; right: -13%; width: 30%; transform: scaleX(-1); }
+.korn--bell-tl { top: 1.5%; left: 16.5%; width: 11.5%; }
+.korn--bell-tr { top: 1.5%; right: 16.5%; width: 11.5%; transform: scaleX(-1); }
+.korn--jasmine-l { bottom: 12%; left: -7.5%; width: 17%; }
+.korn--jasmine-r { bottom: 12%; right: -7.5%; width: 17%; transform: scaleX(-1); }
+.korn--pavilion { top: -4.5%; left: 50%; margin-left: -3.6%; width: 7.2%; opacity: .95; }
+.korn--drape { bottom: 4%; right: -10%; width: 19%; opacity: .95; }
+.korn--lotus-bl { bottom: -2.5%; left: 8%; width: 15%; }
+.korn--lotus-br { bottom: 6.5%; right: -6.5%; width: 14%; transform: scaleX(-1); }
+.korn--spray-bl { bottom: 1.5%; left: -4.5%; width: 22%; }
+.korn--spray-br { bottom: 1.5%; right: -4.5%; width: 22%; transform: scaleX(-1); }
+
+.korn--sparkle { inset: 0; width: 100%; height: 100%; }
+.gp-spark { fill: var(--champagne-soft); animation: kspark-blink 3.4s ease-in-out infinite; }
+.gp-spark-x { stroke: var(--champagne-soft); stroke-width: 1; animation: kspark-blink 4.2s ease-in-out .8s infinite; }
+.gp-spark-dot { fill: var(--champagne-soft); opacity: .8; }
+@keyframes kspark-blink {
+  0%, 100% { opacity: .25; }
+  50% { opacity: 1; }
+}
+
+/* hanging bud strings on the card shoulders */
+.gp-string { stroke: var(--gold-line); stroke-width: 1; fill: none; }
+.gp-bead { fill: var(--champagne-soft); stroke: none; }
+.gp-bud { fill: color-mix(in srgb, var(--champagne) 72%, #F3E3BC); stroke: var(--champagne-soft); stroke-width: .7; }
+.gp-bud-dot { fill: var(--paper-raised); stroke: none; }
+.gp-tassel { fill: var(--burgundy); opacity: .9; }
+
+.hero-scroll {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: color-mix(in srgb, var(--ink-soft) 72%, transparent);
+}
+.hero-scroll__block {
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: .58rem;
+  letter-spacing: .34em;
+  text-indent: .34em;
+}
+.hero-scroll__arrow {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: var(--champagne-soft);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: hero-dip 2.6s var(--ease) infinite;
+}
+@keyframes hero-dip {
+  0%, 100% { transform: translateY(0); opacity: .8; }
+  50% { transform: translateY(5px); opacity: 1; }
+}
+
+/* ═══ Ⅱ · THE CHRONICLE — story ════════════════════════════════ */
+
+.scene--story .scene-body { text-align: left; max-width: 760px; }
+
+.chapter-num {
+  position: absolute;
+  top: -.42em;
+  left: -.06em;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(6.4rem, 13vw, 9.4rem);
+  line-height: 1;
+  color: color-mix(in srgb, var(--rose) 52%, transparent);
+  pointer-events: none;
+  user-select: none;
+}
+
+.scene--story .display { margin-top: 14px; max-width: 12ch; }
+.scene--story .prose { margin-top: 26px; max-width: 58ch; }
+.scene--story .prose--dropcap { margin-top: 30px; }
+
+.story-quote {
+  margin: 38px 0 0 clamp(0px, 6%, 44px);
+  max-width: 44ch;
+}
+.story-quote__rule { width: 132px; margin-bottom: 14px; }
+.story-quote__text {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.3rem, 3.4vw, 1.8rem);
+  line-height: 1.4;
+  color: var(--burgundy);
+}
+.story-quote__label {
+  margin-top: 10px;
+  color: var(--champagne-soft);
+  font-size: .6rem;
+}
+
+.story-note {
+  margin: 30px clamp(0px, 6%, 44px) 0;
+  display: grid;
+  gap: 4px;
+}
+.story-note-credit {
+  font-size: .95rem;
+  color: var(--charcoal);
+}
+
+.story-captions {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 30px;
+}
+.story-caption {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-hand);
+  font-size: 1.06rem;
+  color: var(--ink-soft);
+}
+.story-caption svg { width: 34px; height: auto; flex: none; }
+
+/* ═══ Ⅲ · THE GILDED PLATE — save the date ═════════════════════ */
+
+.scene-body--std { padding-top: clamp(18px, 4vh, 38px); }
+
+.std-band {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(64% 40% at 50% 30%, color-mix(in srgb, var(--champagne) 10%, transparent), transparent 72%);
+  pointer-events: none;
+}
+
+.std-emblem {
+  width: clamp(56px, 8.5vw, 78px);
+  height: auto;
+  filter: drop-shadow(0 4px 18px rgba(198, 161, 79, .45));
+}
+
+.std-title {
+  margin-top: 18px;
+  font-family: var(--font-editorial);
+  font-weight: 300;
+  font-size: clamp(2rem, 5.6vw, 3.1rem);
+  line-height: 1.1;
+  color: var(--sunset);
+}
+
+.std-crossing {
+  margin-top: 6px;
+  font-size: clamp(1.3rem, 3.6vw, 1.9rem);
+  color: var(--rose);
+}
+
+.std-numerals {
+  margin-top: clamp(18px, 4vh, 30px);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-numerals);
+  letter-spacing: .14em;
+  background: linear-gradient(172deg,
+    color-mix(in srgb, var(--champagne) 62%, #F3E3BC) 10%,
+    color-mix(in srgb, var(--champagne) 82%, #FBEFC9) 34%,
+    var(--champagne) 56%,
+    color-mix(in srgb, var(--champagne-soft) 78%, #7C5A26) 88%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.std-display {
+  margin: 14px auto 0;
+  max-width: 44ch;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+  color: var(--night-ink);
+}
+
+.std-note {
+  margin-top: 18px;
+  font-family: var(--font-ui);
+  font-size: .78rem;
+  letter-spacing: .04em;
+  color: var(--night-faint);
+}
+
+.std-actions {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.std-seal {
+  position: relative;
+  width: clamp(4.6rem, 13vw, 5.6rem);
+  aspect-ratio: 1;
+  margin: clamp(30px, 6vh, 48px) auto 0;
+  display: grid;
+  place-items: center;
+}
+.seal__art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 8px 20px rgba(27, 46, 74, .5)); }
+.seal__initials {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-content: end;
+  justify-items: center;
+  padding-bottom: 9%;
+  box-sizing: border-box;
+  background: none;
+  font-size: .72rem;
+  letter-spacing: .06em;
+  color: #5C4718;
+  text-shadow:
+    0 1px 0 rgba(255, 240, 200, .5),
+    0 -1px 0 rgba(90, 62, 20, .35);
+}
+
+/* ═══ Ⅳ · THE CUSPED NICHES — celebrations ═════════════════════ */
+
+.details-intro { margin-top: 16px; }
+
+.programme {
+  position: relative;
+  list-style: none;
+  margin: clamp(34px, 6vh, 54px) auto 0;
+  max-width: 720px;
+  display: grid;
+  gap: clamp(30px, 5vh, 44px);
+}
+/* the water channel — a gold rill stitching the events together */
+.programme::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(180deg,
+    transparent,
+    var(--paper-line) 6% 94%,
+    transparent);
+  z-index: 0;
+}
+
+.programme-item {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.programme-niche {
+  position: relative;
+  width: 64px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  justify-self: center;
+}
+.programme-arch { position: absolute; inset: 0; width: 100%; height: 100%; }
+.programme-orn {
+  position: relative;
+  width: 32px;
+  height: 38px;
+}
+
+.programme-text { grid-row: 1; display: grid; gap: 6px; }
+.programme-item:nth-child(odd) .programme-text {
+  grid-column: 2;
+  justify-items: start;
+  text-align: left;
+}
+.programme-item:nth-child(even) .programme-text {
+  grid-column: 1;
+  grid-row: 1;
+  justify-items: end;
+  text-align: right;
+}
+.programme-item:nth-child(even) { grid-template-columns: 1fr 64px; }
+.programme-item:nth-child(even) .programme-niche { grid-column: 2; }
+.programme-item:nth-child(even) .programme-text { grid-column: 1; }
+
+.programme-index {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: .82rem;
+  letter-spacing: .2em;
+  color: var(--champagne-soft);
+}
+.programme-name {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  font-size: clamp(1.3rem, 3.4vw, 1.8rem);
+  line-height: 1.2;
+  color: var(--ink);
+}
+.programme-value {
+  font-family: var(--font-ui);
+  font-size: .8rem;
+  letter-spacing: .06em;
+  color: var(--burgundy);
+}
+.programme-note {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.75;
+  color: var(--ink-soft);
+  max-width: 40ch;
+}
+.programme-foot {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+.programme-foot i {
+  width: 26px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--paper-line), transparent);
+}
+.programme-item:nth-child(odd) .programme-foot i:first-child { display: none; }
+.programme-item:nth-child(even) .programme-foot i:last-child { display: none; }
+.programme-item:nth-child(odd) .programme-foot i:last-child {
+  background: linear-gradient(90deg, transparent, var(--paper-line));
+}
+.programme-item:nth-child(even) .programme-foot i:first-child {
+  background: linear-gradient(90deg, var(--paper-line), transparent);
+}
+.programme-foot b {
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  border: 1px solid var(--gold-line);
+}
+
+/* the niche paint — a cusped mehrab wash */
+.gp-niche-wash { fill: color-mix(in srgb, var(--rose) 30%, transparent); stroke: none; }
+.gp-niche-line { stroke: var(--champagne-soft); fill: none; stroke-width: 1.5; }
+.gp-niche-line--thin { stroke: var(--gold-line); fill: none; stroke-width: .9; }
+.gp-niche-bead { fill: var(--champagne-soft); stroke: none; }
+.programme-orn .orn-line { stroke-width: 1.9; }
+
+/* the particulars — a four-panel marble plate below the channel */
+.particulars {
+  position: relative;
+  max-width: 760px;
+  margin: clamp(44px, 8vh, 70px) auto 0;
+  padding: clamp(22px, 4vw, 34px);
+  background: color-mix(in srgb, var(--paper-raised) 72%, transparent);
+  border: 1px solid var(--paper-line);
+  border-radius: var(--card-radius);
+}
+.particulars::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid var(--gold-faint);
+  border-radius: 3px;
+  pointer-events: none;
+}
+.particulars-eyebrow {
+  margin-bottom: 18px;
+  color: var(--champagne-soft);
+  font-size: .6rem;
+}
+.particulars-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.particular {
+  padding: 16px 18px;
+  display: grid;
+  gap: 7px;
+  justify-items: start;
+  text-align: left;
+}
+.particular:nth-child(odd) { border-right: 1px solid var(--paper-line); }
+.particular:nth-child(n + 3) { border-top: 1px solid var(--paper-line); }
+.particular-label { color: var(--champagne-soft); font-size: .6rem; }
+.particular-value {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.particular-note {
+  font-family: var(--font-body);
+  font-size: .9rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+/* ═══ Ⅴ · THE INLAY SWATCHES — colours of the day ═══════════════ */
+
+.scene--palette { background-color: var(--parchment); }
+
+.palette-intro { margin-top: 16px; max-width: 52ch; margin-inline: auto; }
+
+.palette-swatches {
+  list-style: none;
+  padding: 0;
+  margin: clamp(30px, 5vh, 44px) auto 0;
+  max-width: 760px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px 18px;
+}
+.palette-swatches li { display: grid; justify-items: center; }
+.palette-swatches li:nth-child(odd) { transform: translateY(-8px); }
+
+.swatch {
+  width: clamp(84px, 22%, 108px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid var(--paper-line);
+  box-shadow:
+    inset 0 0 0 4px color-mix(in srgb, var(--paper-raised) 85%, transparent),
+    inset 0 0 0 5px var(--paper-line),
+    0 10px 22px -12px color-mix(in srgb, var(--night) 45%, transparent);
+  transition: transform .3s var(--ease);
+}
+.swatch:hover { transform: translateY(-4px); }
+.swatch-name {
+  margin-top: 10px;
+  font-family: var(--font-ui);
+  font-size: .66rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.dresscode {
+  margin: clamp(34px, 6vh, 52px) auto 0;
+  max-width: 52ch;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+.dresscode-orn {
+  width: clamp(56px, 9vw, 76px);
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(169, 80, 46, .2));
+}
+.dresscode-label { color: var(--champagne-soft); font-size: .6rem; }
+.dresscode-title {
+  font-family: var(--font-editorial);
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  color: var(--ink);
+}
+.dresscode-note {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+  color: var(--ink-soft);
+}
+
+/* ═══ Ⅵ · THE GARLAND — festivities ════════════════════════════ */
+
+.scene--itinerary .display { color: var(--sunset); }
+
+.day-words {
+  list-style: none;
+  margin: clamp(30px, 5vh, 46px) auto 0;
+  padding: 0;
+  max-width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px 26px;
+}
+.day-words::before { content: none; }
+
+.day-word {
+  width: 108px;
+  display: grid;
+  justify-items: center;
+  gap: 9px;
+  position: relative;
+}
+.day-word::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: calc(-14px);
+  width: 14px;
+  height: 1px;
+  background: var(--gold-faint);
+}
+.day-word:first-child::before { content: none; }
+.day-word__bulb {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--gold-bright) 55%, transparent);
+  background: radial-gradient(circle,
+    color-mix(in srgb, var(--gold-bright) 30%, transparent) 0%,
+    color-mix(in srgb, var(--night-deep) 55%, transparent) 72%);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--gold-bright) 28%, transparent);
+}
+.day-word__bulb circle { fill: var(--gold-bright); }
+.day-word__bulb svg { stroke: var(--gold-bright); opacity: .85; }
+.day-word__text {
+  font-family: var(--font-editorial);
+  font-size: clamp(.92rem, 2.4vw, 1.1rem);
+  letter-spacing: .06em;
+  color: var(--sunset-soft);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* ═══ Ⅶ · THE MARBLE PAVILION — venue ══════════════════════════ */
+
+.venue-title {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.25;
+  color: var(--ink);
+  max-width: 22ch;
+  margin-inline: auto;
+}
+
+.venue-stage {
+  position: relative;
+  width: min(100%, 560px);
+  aspect-ratio: 560 / 448;
+  margin: clamp(30px, 5vh, 46px) auto 0;
+}
+.venue-pavilion {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='80' viewBox='0 0 100 80'%3E%3Cpath fill='%23fff' d='M 0 80 L 0 28 C 4.62 29.97 9.32 18.97 4.7 17 C 7.75 21.1 17.51 13.81 14.45 9.72 C 16.33 14.49 27.7 10.02 25.82 5.24 C 26.85 10.27 38.83 7.82 37.8 2.79 C 38.13 7.91 50.33 7.13 50 2 C 49.67 7.13 61.87 7.91 62.2 2.79 C 61.17 7.82 73.15 10.27 74.18 5.24 C 72.3 10.02 83.67 14.49 85.55 9.72 C 82.49 13.81 92.25 21.1 95.3 17 C 90.68 18.97 95.38 29.97 100 28 L 100 80 Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='80' viewBox='0 0 100 80'%3E%3Cpath fill='%23fff' d='M 0 80 L 0 28 C 4.62 29.97 9.32 18.97 4.7 17 C 7.75 21.1 17.51 13.81 14.45 9.72 C 16.33 14.49 27.7 10.02 25.82 5.24 C 26.85 10.27 38.83 7.82 37.8 2.79 C 38.13 7.91 50.33 7.13 50 2 C 49.67 7.13 61.87 7.91 62.2 2.79 C 61.17 7.82 73.15 10.27 74.18 5.24 C 72.3 10.02 83.67 14.49 85.55 9.72 C 82.49 13.81 92.25 21.1 95.3 17 C 90.68 18.97 95.38 29.97 100 28 L 100 80 Z'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  filter: drop-shadow(0 10px 24px rgba(27, 46, 74, .2));
+}
+.venue-urli {
+  position: absolute;
+  right: 4%;
+  bottom: -6%;
+  width: 22%;
+  filter: drop-shadow(0 0 16px rgba(198, 161, 79, .4));
+}
+.venue-cypress {
+  position: absolute;
+  top: -7%;
+  width: 13%;
+  filter: drop-shadow(0 8px 16px rgba(27, 46, 74, .28));
+}
+.venue-cypress--l { left: -5%; }
+.venue-cypress--r { right: -5%; transform: scaleX(-1); }
+
+.venue-description {
+  margin: 26px auto 0;
+  max-width: 54ch;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+.venue-sublines {
+  margin: 26px auto 0;
+  max-width: 480px;
+  display: grid;
+}
+.venue-sublines .sub {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  padding-block: 12px;
+}
+.venue-sublines .sub + .sub { border-top: 1px solid var(--paper-line); }
+.venue-sublines .label-caps { color: var(--champagne-soft); font-size: .6rem; }
+.venue-sublines em {
+  font-family: var(--font-hand);
+  font-style: normal;
+  font-size: 1.06rem;
+  color: var(--ink-soft);
+}
+
+.venue-address {
+  margin: 30px auto 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 46ch;
+}
+.venue-address .icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  fill: none;
+  stroke: var(--burgundy);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.venue-address p {
+  font-family: var(--font-ui);
+  font-size: .84rem;
+  letter-spacing: .04em;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  text-align: left;
+}
+
+.venue-actions { margin-top: 28px; }
+
+/* ═══ Ⅷ · THE SHAMSA — countdown ═══════════════════════════════ */
+
+.scene--countdown { overflow: hidden; }
+
+.countdown-wreath {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(72%, 460px);
+  height: auto;
+  opacity: .5;
+  z-index: 0;
+  pointer-events: none;
+  animation: wreath-turn 240s linear infinite;
+}
+@keyframes wreath-turn {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* the shamsa rosette — gold star-of-eight lace (night scenes) */
+.lace-star { stroke: var(--gold-line); stroke-width: 1.1; fill: none; }
+.lace-star--inner { stroke: var(--gold-faint); stroke-width: .9; }
+.lace-ring { stroke: var(--gold-line); stroke-width: 1.2; fill: none; }
+.lace-ring--soft { stroke: var(--gold-faint); stroke-width: .8; }
+.lace-pearl { fill: var(--gilding-soft); stroke: none; }
+.lace-pearls circle { fill: var(--gilding-soft); stroke: none; }
+
+.count-script {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 5.4vw, 3rem);
+  line-height: 1.25;
+  color: var(--sunset);
+}
+.count-script em {
+  font-style: normal;
+  font-family: var(--font-script);
+  color: var(--rose);
+}
+
+.count-clock {
+  margin: clamp(28px, 5vh, 44px) auto 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.count-unit {
+  position: relative;
+  width: 88px;
+  padding: 15px 6px 13px;
+  border: 1px solid var(--glass-edge);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--night-deep) 52%, transparent);
+  display: grid;
+  gap: 5px;
+}
+.count-unit::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border: 1px solid var(--gold-ghost);
+  border-radius: 2px;
+  pointer-events: none;
+}
+.count-num {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 1;
+  color: var(--ember);
+  font-variant-numeric: tabular-nums;
+}
+.count-label {
+  color: var(--night-faint);
+  font-size: .56rem;
+}
+
+.count-summary {
+  margin-top: 18px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--night-ink);
+}
+.count-message {
+  margin-top: 18px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--night-ink);
+}
+.count-date {
+  margin-top: 26px;
+  color: var(--night-faint);
+  font-size: .62rem;
+  line-height: 1.8;
+}
+.count-date__zone { color: var(--champagne-soft); }
+
+/* ═══ Ⅸ · THE REPLY DESK — rsvp ════════════════════════════════ */
+
+.watermark-script {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-urdu);
+  font-size: clamp(5rem, 14vw, 10rem);
+  line-height: 1.6;
+  white-space: nowrap;
+  color: color-mix(in srgb, var(--champagne-soft) 9%, transparent);
+  pointer-events: none;
+  user-select: none;
+}
+
+.rsvp-card {
+  position: relative;
+  max-width: 620px;
+  margin-inline: auto;
+  padding: clamp(26px, 5vw, 44px) clamp(20px, 4.6vw, 40px) clamp(30px, 5vw, 46px);
+  background:
+    linear-gradient(168deg,
+      color-mix(in srgb, var(--paper-raised) 97%, white) 0%,
+      color-mix(in srgb, var(--ivory) 86%, var(--parchment) 14%) 100%);
+  border-radius: var(--card-radius);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--champagne-soft) 55%, transparent),
+    var(--shadow-card);
+}
+.rsvp-card::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid var(--gold-faint);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.rsvp-title {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  font-size: clamp(2rem, 5.4vw, 2.9rem);
+  line-height: 1.15;
+  color: var(--ink);
+}
+.rsvp-deadline {
+  margin-top: 10px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--ink-soft);
+}
+.rsvp-ornament { max-width: 340px; margin: 20px auto 0; }
+.rsvp-ornament__img { width: 100%; height: auto; display: block; }
+
+/* ═══ Ⅹ · THE MOONLIGHT GARDEN — closing ═══════════════════════ */
+
+.scene--closing { overflow: hidden; }
+
+/* the moonlit Taj — an arched plate above the last words */
+.closing-plate {
+  position: relative;
+  z-index: 1;
+  width: min(560px, 92%);
+  aspect-ratio: 100 / 74;
+  margin: 0 auto clamp(26px, 4vh, 40px);
+  pointer-events: none;
+}
+.closing-plate__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='74' viewBox='0 0 100 74'%3E%3Cpath fill='%23fff' d='M 0 74 L 0 30 C 4.62 31.97 9.32 20.97 4.7 19 C 7.75 23.1 17.51 15.81 14.45 11.72 C 16.33 16.49 27.7 12.02 25.82 7.24 C 26.85 12.27 38.83 9.82 37.8 4.79 C 38.13 9.91 50.33 9.13 50 4 C 49.67 9.13 61.87 9.91 62.2 4.79 C 61.17 9.82 73.15 12.27 74.18 7.24 C 72.3 12.02 83.67 16.49 85.55 11.72 C 82.49 15.81 92.25 23.1 95.3 19 C 90.68 20.97 95.38 31.97 100 30 L 100 74 Z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='74' viewBox='0 0 100 74'%3E%3Cpath fill='%23fff' d='M 0 74 L 0 30 C 4.62 31.97 9.32 20.97 4.7 19 C 7.75 23.1 17.51 15.81 14.45 11.72 C 16.33 16.49 27.7 12.02 25.82 7.24 C 26.85 12.27 38.83 9.82 37.8 4.79 C 38.13 9.91 50.33 9.13 50 4 C 49.67 9.13 61.87 9.91 62.2 4.79 C 61.17 9.82 73.15 12.27 74.18 7.24 C 72.3 12.02 83.67 16.49 85.55 11.72 C 82.49 15.81 92.25 23.1 95.3 19 C 90.68 20.97 95.38 31.97 100 30 L 100 74 Z'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  filter: drop-shadow(0 10px 26px rgba(16, 31, 53, .5));
+}
+
+/* a gemstone cascade falling from the night's right corner */
+.closing-bloom--r {
+  position: absolute;
+  top: 6%;
+  right: -2%;
+  width: clamp(110px, 15vw, 190px);
+  transform: scaleX(-1);
+  opacity: .85;
+  filter: drop-shadow(0 8px 20px rgba(16, 31, 53, .5));
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+.closing-bloom--r.reveal { transform: scaleX(-1) translateY(22px); }
+.closing-bloom--r.reveal.in-view,
+.no-js .closing-bloom--r.reveal { transform: scaleX(-1); }
+
+.scene--closing .scene-body { margin-top: 0; }
+
+.closing-script {
+  font-family: var(--font-hand);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--night-faint);
+}
+.closing-names {
+  margin-top: 8px;
+  font-size: clamp(2.8rem, 8vw, 4.6rem);
+  line-height: 1.15;
+  color: var(--rose);
+  text-shadow: 0 2px 30px color-mix(in srgb, var(--champagne) 30%, transparent);
+}
+.closing-date {
+  margin-top: 14px;
+  color: var(--night-faint);
+  font-size: .64rem;
+  line-height: 1.8;
+}
+.closing-message {
+  margin: 26px auto 0;
+  max-width: 50ch;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.9;
+  color: var(--night-ink);
+}
+.closing-seal {
+  position: relative;
+  width: clamp(4.6rem, 13vw, 5.6rem);
+  aspect-ratio: 1;
+  margin: clamp(28px, 5vh, 44px) auto 0;
+  display: grid;
+  place-items: center;
+}
+.closing-actions {
+  margin-top: clamp(26px, 5vh, 40px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+.closing-actions .btn { color: var(--sunset-soft); }
+
+/* ═══ THE FOOTER — the garden gate plaque ═══════════════════════ */
+
+.footer {
+  position: relative;
+  padding: clamp(38px, 7vh, 60px) var(--scene-pad-x) clamp(30px, 5vh, 44px);
+  background: var(--night-deep);
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+.footer-ornament { width: min(420px, 84%); height: auto; display: block; opacity: .95; }
+.footer .small { color: var(--night-faint); }
+.footer-credit a {
+  color: var(--champagne-soft);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-faint);
+  transition: color .25s ease, border-color .25s ease;
+}
+.footer-credit a:hover { color: var(--ember); }
+
+/* ══════════════════════════════════════════════════════════════
+   MUMTAZ ORNAMENT PAINT — every decoration class below resolves
+   to a theme token, so the whole monument recolours with the mood.
+   ══════════════════════════════════════════════════════════════ */
+
+/* svg geometry defaults */
+.korn, .kstage__mandala, .countdown-wreath, .venue-urli, .venue-cypress,
+.std-emblem, .kcard-lotus, .kcard-date-orn, .footer-ornament,
+.rsvp-ornament svg, .story-quote__rule, .story-caption svg,
+.dresscode-orn, .closing-bloom--r, .closing-plate__img {
+  height: auto;
+}
+.envelope-lace { height: auto; }
+.rsvp-ornament svg { width: 100%; display: block; }
+
+/* the inlay frieze is a mounted marble plaque */
+.rsvp-ornament__img, .footer-ornament {
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* the envelope letter sprig — dome between two rules */
+.gp-sprig-rule { stroke: var(--gold-faint); stroke-width: 1; fill: none; }
+.gp-sprig-dome { stroke: var(--champagne-soft); stroke-width: 1.4; fill: none; }
+.gp-sprig-dome--thin { stroke: var(--gold-line); stroke-width: 1; fill: none; }
+.gp-sprig-finial { stroke: var(--champagne-soft); stroke-width: 1.2; fill: none; }
+.gp-sprig-dot { fill: var(--champagne-soft); stroke: none; }
+
+/* minaret rules beside the date numeral */
+.gp-minaret { stroke: var(--champagne-soft); stroke-width: 1.6; fill: none; }
+.gp-minaret--thin { stroke: var(--gold-line); stroke-width: 1; fill: none; }
+.gp-minaret-dot { fill: var(--champagne-soft); stroke: none; }
+
+/* shared line ornaments */
+.orn-line { stroke: var(--champagne-soft); fill: none; stroke-width: 1.6; }
+.orn-line--thin { stroke-width: 1; }
+.rule { stroke: var(--paper-line); fill: none; stroke-width: 1; }
+.dot-gold { fill: var(--champagne-soft); }
+.orn-dot { fill: var(--champagne-soft); }
