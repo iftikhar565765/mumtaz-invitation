@@ -42,9 +42,9 @@ window.HEIRLOOM = {
 
   /* ── The venue ──────────────────────────────────────────────── */
   venue: {
-    name: "The Taj Vista Pavilion",                       // SAMPLE
-    address: "18 Fatehabad Road, Agra, Uttar Pradesh 282001", // SAMPLE
-    mapsQuery: "The Taj Vista Pavilion, Fatehabad Road, Agra",
+    name: "The Gulshan Mahal",                            // SAMPLE
+    address: "7 Riverfront Terrace, Sundar Bagh, Agra, Uttar Pradesh 282001", // SAMPLE
+    mapsQuery: "Gulshan Mahal, Riverfront Terrace, Agra",
     /* A full URL here overrides the map link built above, e.g. an
        exact Google Maps place link or an Apple Maps URL.          */
     mapUrl: ""
@@ -53,10 +53,10 @@ window.HEIRLOOM = {
   /* ── Copy shown throughout the invitation ────────────────────
      The visual editor can change these values without editing HTML. */
   content: {
-    pageTitle: "Ayaan & Mehr · 6 November 2027 — A Taj Mahal Wedding Invitation",
-    pageDescription: "Ayaan and Mehr request the honour of your presence at The Taj Vista Pavilion, Fatehabad Road, Agra — two days of mehndi, qawwali and the sacred pheras at 10:18 on Saturday the sixth of November 2027, in the city of the monument to love. Open your invitation.",
+    pageTitle: "Ayaan & Mehr · 6 November 2027 — An Invitation in Ivory & Gold",
+    pageDescription: "Ayaan and Mehr request the honour of your presence at The Gulshan Mahal, a private riverside garden in Agra — two days of mehndi, qawwali and the sacred pheras at 10:18 on Saturday the sixth of November 2027. Open your invitation.",
     socialTitle: "Ayaan & Mehr — An Invitation · 06.11.2027",
-    socialDescription: "Ivory marble, gemstone inlay and a happily ever after — you are cordially invited.",
+    socialDescription: "Ivory marble, champagne gold and a happily ever after — you are cordially invited.",
     navStory: "Story",
     navDetails: "Events",
     navVenue: "Venue",
@@ -71,7 +71,7 @@ window.HEIRLOOM = {
     menuRsvp: "Kindly Respond",
     menuCountdown: "The Countdown",
     menuClosing: "A Closing Note",
-    openingEyebrow: "At the great gate, every veil is lifted gently — you are invited to the wedding of",
+    openingEyebrow: "At the marble gate, every veil is lifted gently — you are invited to the wedding of",
     openingHint: "Touch the seal to lift the veil",
     openButton: "Enter the Pavilion",
     skipButton: "Skip straight to the invitation",
@@ -79,19 +79,19 @@ window.HEIRLOOM = {
     invitationEyebrow: "With the blessings of our families",
     invitationLead: "We joyfully invite you to celebrate the wedding of",
     invitationAnd: "and",
-    invitationClosing: "Your presence is the gold leaf on our day",
+    invitationClosing: "Your presence is the gold leaf of our day",
     heroVenueLabel: "Venue",
     sceneSignboard: "Together is our favorite place to be",
     invitationVenueSuffix: "· Agra",
     storyKicker: "The Chronicle",
     storyTitle: "Two hearts,",
-    storyTitleScript: "one monument",
-    storyParagraphOne: "Every monument begins as a moment, and ours was an October morning at Mehtab Bagh, the moonlight garden across the river. One shared bench, one scarf carried off by the river wind, one conversation that outlasted the sunrise as the Taj rose slowly out of the mist — and somehow, that morning decided the rest of our lives.",
-    storyParagraphTwo: "Five years and two cities later, we are returning to the river to begin our next chapter — adding our names to the city of the world's most famous promise: that love, built patiently and by hand, outlives everything. Nothing would mean more than to have you standing beside us when we do.",
+    storyTitleScript: "one marble song",
+    storyParagraphOne: "Every love story worth telling begins with one unhurried morning, and ours was an October morning at Mehtab Bagh, the moonlight garden across the river. One shared bench, one scarf carried off by the river wind, one conversation that outlasted the sunrise as the pale dome rose slowly out of the mist — and somehow, that morning decided the rest of our lives.",
+    storyParagraphTwo: "Five years and two cities later, we are returning to the river to begin our next chapter — making our own small promise in a city built on one: that love, made patiently and by hand, outlives everything. Nothing would mean more than to have you standing beside us when we do.",
     storyQuote: "A teardrop on the cheek of time.",
-    storyQuoteLabel: "— Rabindranath Tagore, on the Taj Mahal — the line we read to each other that first morning",
+    storyQuoteLabel: "— Rabindranath Tagore — the line we read to each other that first morning",
     storyNote: "chapter one, and every chapter after",
-    storyNoteCredit: "— pencilled on the back of a Taj Mahal entry ticket",
+    storyNoteCredit: "— pencilled on the back of a garden entry ticket",
     storyCaptionOne: "the morning at Mehtab Bagh",
     storyCaptionTwo: "the scarf on the river wind",
     storyCaptionFour: "the seven vows",
@@ -104,7 +104,7 @@ window.HEIRLOOM = {
     detailsKicker: "The Celebrations",
     detailsTitleFirst: "Wedding",
     detailsTitleSecond: "Events",
-    detailsIntro: "Two days of festivity in the city of the Taj — at a glance.",
+    detailsIntro: "Two days of festivity on the riverfront — at a glance.",
     haldiLabel: "The Haldi",
     haldiTime: "Friday, 5 November 2027 · nine in the morning",
     haldiNote: "A golden morning of turmeric, songs and blessings on the riverside terrace.",
@@ -134,15 +134,15 @@ window.HEIRLOOM = {
     paletteKicker: "The Colours of the Day",
     paletteTitleFirst: "The inlay",
     paletteTitleSecond: "palette",
-    paletteIntro: "Makrana ivory and champagne gold, carnelian and lapis, jade and rose quartz — the stones of the inlay, worn by our favourite people.",
+    paletteIntro: "Makrana ivory and champagne gold, carnelian and lapis, jade and pearl blush — the stones of the inlay, worn by our favourite people.",
     dressCodeLabel: "Attire · Jewel Tones & Ivory",
     dressCodeTitle: "Stones of the inlay",
-    dressCodeNote: "Ivory silk, carnelian brights and lapis depths are most welcome — dress as splendidly as you feel.",
+    dressCodeNote: "Ivory silk, warm carnelian tones and deep lapis are most welcome — dress as splendidly as you feel.",
     weddingDayKicker: "The Celebrations",
     weddingDayTitleFirst: "The wedding",
     weddingDayTitleSecond: "festivities",
     venueKicker: "The Place",
-    venueDescription: "A marble pavilion on Fatehabad Road with the Taj on the horizon — cusped arches and chandeliers, shehnai at the door, roses on every table and candles floating in the courtyard bowl.",
+    venueDescription: "A private riverside garden estate of marble courts and cusped pavilions — jali light at noon, candles at dusk, shehnai at the gate, and roses on every table.",
     venueCeremonyLabel: "Pheras",
     venueCeremonyText: "in the garden mandap, as the shehnai plays",
     venueReceptionLabel: "Walima",
@@ -176,17 +176,17 @@ window.HEIRLOOM = {
     countdownTitle: "counting the hours until",
     countdownPromise: "the pheras begin",
     closingScript: "with all our love",
-    closingMessage: "Thank you, from the depths of our hearts, for being part of our story. May we always watch the dawn rise over the river the way we watched it that first morning — together, and with full hearts. Your presence completes our day.",
-    footerTagline: "Ivory, gold and a monument to love."
+    closingMessage: "Thank you, from the depths of our hearts, for being part of our story. May we always watch the dawn rise over the river the way we watched it that first morning — slowly, and together. Your presence completes our day.",
+    footerTagline: "Ivory and gold — a promise in marble."
   },
 
   palette: [
-    { name: "Makrana Ivory",  color: "#F7F3EA" },
-    { name: "Champagne Gold", color: "#C6A14F" },
-    { name: "Carnelian",      color: "#A9502E" },
-    { name: "Lapis Dusk",     color: "#1B2E4A" },
-    { name: "Jade",           color: "#3E6B52" },
-    { name: "Rose Quartz",    color: "#E4C9B4" }
+    { name: "Makrana Ivory",  color: "#F2EDE2" },
+    { name: "Champagne Gold", color: "#B98A3E" },
+    { name: "Carnelian",      color: "#A3492A" },
+    { name: "Dusk Umber",     color: "#362A1E" },
+    { name: "Jade",           color: "#6E8265" },
+    { name: "Pearl Blush",    color: "#E9D3C0" }
   ],
   theme: "taj",
   themeColors: {},

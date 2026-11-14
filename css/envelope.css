@@ -21,9 +21,12 @@
   padding: clamp(4.5rem, 10vh, 7rem) var(--scene-pad-x);
   overflow: clip;
   background:
-    radial-gradient(120% 70% at 50% -10%, color-mix(in srgb, var(--wine) 52%, transparent) 0%, transparent 58%),
-    radial-gradient(90% 46% at 50% 112%, color-mix(in srgb, var(--crimson) 14%, transparent) 0%, transparent 66%),
+    url("assets/art/marble-dusk.svg"),
+    radial-gradient(120% 70% at 50% -10%, color-mix(in srgb, var(--burgundy) 30%, transparent) 0%, transparent 58%),
+    radial-gradient(90% 46% at 50% 112%, color-mix(in srgb, var(--champagne) 16%, transparent) 0%, transparent 66%),
     var(--night-deep);
+  background-size: cover, auto, auto, auto;
+  background-blend-mode: soft-light, normal, normal, normal;
 }
 /* faint eight-point star jali over the whole gate */
 .opening::before {
@@ -47,15 +50,15 @@
 .opening__florals {
   position: absolute;
   width: clamp(11rem, 24vw, 17rem);
-  opacity: .92;
+  opacity: .95;
   pointer-events: none;
   user-select: none;
-  filter: drop-shadow(0 10px 24px rgba(16, 31, 53, .5));
+  filter: drop-shadow(0 4px 14px rgba(24, 17, 10, .4));
 }
 .opening__florals--tl { top: -2.4rem; left: -2.4rem; transform: rotate(-4deg); }
 .opening__florals--tr { top: -2.4rem; right: -2.4rem; transform: scaleX(-1) rotate(-4deg); }
-.opening__florals--bl { bottom: -2.4rem; left: -2.4rem; transform: scaleY(-1) rotate(-4deg); opacity: .55; }
-.opening__florals--br { bottom: -2.4rem; right: -2.4rem; transform: scale(-1, -1) rotate(-4deg); opacity: .55; }
+.opening__florals--bl { bottom: -2.4rem; left: -2.4rem; transform: scaleY(-1) rotate(-4deg); opacity: .5; }
+.opening__florals--br { bottom: -2.4rem; right: -2.4rem; transform: scale(-1, -1) rotate(-4deg); opacity: .5; }
 
 /* ── drifting pearl motes ─────────────────────────────────────── */
 .opening__mote {
@@ -170,7 +173,7 @@
   width: 80%;
   height: 36px;
   transform: translateX(-50%);
-  background: radial-gradient(50% 50% at 50% 50%, rgba(10, 18, 32, .8), transparent 70%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(16, 11, 6, .8), transparent 70%);
   filter: blur(7px);
   pointer-events: none;
 }
@@ -288,7 +291,7 @@
   inset: 0;
   z-index: 3;
   clip-path: polygon(0 0, 50% 46%, 100% 0, 100% 100%, 0 100%);
-  filter: drop-shadow(0 4px 8px rgba(27, 46, 74, .3));
+  filter: drop-shadow(0 4px 8px rgba(38, 27, 16, .3));
 }
 
 .envelope__pocket-face {
@@ -336,7 +339,7 @@
     inset 0 0 0 1px color-mix(in srgb, var(--champagne-soft) 62%, transparent),
     inset 0 0 0 3px var(--paper-raised),
     inset 0 0 0 4px color-mix(in srgb, var(--champagne-soft) 42%, transparent),
-    0 2px 6px rgba(27, 46, 74, .25);
+    0 2px 6px rgba(38, 27, 16, .25);
 }
 
 .envelope__to {
@@ -390,7 +393,7 @@
   box-shadow:
     inset 0 0 0 1px color-mix(in srgb, var(--champagne-soft) 52%, transparent),
     inset 0 10px 22px rgba(255, 252, 244, .24);
-  filter: drop-shadow(0 3px 4px rgba(27, 46, 74, .34));
+  filter: drop-shadow(0 3px 4px rgba(38, 27, 16, .34));
 }
 
 .envelope__flap-face::after {
@@ -426,7 +429,7 @@
   width: clamp(2.9rem, 8.5vw, 3.5rem);
   height: auto;
   transform: rotate(4deg);
-  filter: drop-shadow(0 2px 5px rgba(27, 46, 74, .4));
+  filter: drop-shadow(0 2px 5px rgba(38, 27, 16, .4));
 }
 
 /* ── the gold dome seal ───────────────────────────────────────── */
@@ -448,19 +451,19 @@
 .envelope__seal-img {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 8px 18px rgba(16, 31, 53, .6));
+  filter: drop-shadow(0 8px 18px rgba(24, 17, 10, .6));
 }
 
 .envelope__seal {
   position: absolute;
   inset: 0;
   display: grid;
-  place-items: center;
-  padding-top: 1.9em;
+  place-items: end center;
+  padding-bottom: 15%;
   box-sizing: border-box;
-  font-size: clamp(.62rem, 1.7vw, .78rem);
-  letter-spacing: .08em;
-  color: #5C4718;
+  font-size: clamp(.52rem, 1.5vw, .66rem);
+  letter-spacing: .14em;
+  color: #4E3A12;
   text-shadow:
     0 1px 0 rgba(255, 240, 200, .5),
     0 -1px 0 rgba(90, 62, 20, .35);

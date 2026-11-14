@@ -10,36 +10,37 @@
   html, body { width:1200px; height:630px; overflow:hidden; }
   body {
     background:
-      radial-gradient(120% 80% at 50% -10%, #24385A 0%, transparent 58%),
-      radial-gradient(90% 50% at 50% 115%, rgba(198,161,79,.14) 0%, transparent 66%),
-      #101F35;
+      url("assets/art/marble-dusk.svg") center / cover,
+      radial-gradient(120% 80% at 50% -10%, rgba(163,73,42,.34) 0%, transparent 58%),
+      radial-gradient(90% 50% at 50% 115%, rgba(185,138,62,.2) 0%, transparent 66%),
+      #261D14;
     position: relative;
   }
   .jaali { position:absolute; inset:0; opacity:.9; }
   .medal { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:440px; opacity:.16; }
   .inner { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
-  .shloka { font-family:'Marcellus',serif; color:rgba(198,161,79,.85); font-size:21px; letter-spacing:.42em; text-indent:.42em; text-transform:uppercase; margin-bottom:16px; }
+  .shloka { font-family:'Marcellus',serif; color:rgba(201,168,92,.85); font-size:21px; letter-spacing:.42em; text-indent:.42em; text-transform:uppercase; margin-bottom:16px; }
   .eyebrow { font-family:'Jost',sans-serif; font-weight:300; color:rgba(239,232,216,.72); font-size:17px; letter-spacing:.34em; text-indent:.34em; text-transform:uppercase; margin-bottom:10px; }
-  .names { font-family:'Pinyon Script',cursive; font-size:118px; line-height:1.05; color:#E9D3C0; text-shadow:0 4px 40px rgba(198,161,79,.35); }
+  .names { font-family:'Pinyon Script',cursive; font-size:118px; line-height:1.05; color:#E9D3C0; text-shadow:0 4px 40px rgba(201,168,92,.35); }
   .rule { display:flex; align-items:center; gap:14px; margin:18px 0 14px; }
-  .rule i { width:150px; height:1px; background:linear-gradient(90deg, transparent, rgba(198,161,79,.8)); }
-  .rule i:last-child { background:linear-gradient(90deg, rgba(198,161,79,.8), transparent); }
+  .rule i { width:150px; height:1px; background:linear-gradient(90deg, transparent, rgba(201,168,92,.8)); }
+  .rule i:last-child { background:linear-gradient(90deg, rgba(201,168,92,.8), transparent); }
   .rule svg { width:26px; height:26px; }
-  .date { font-family:'Marcellus',serif; color:#C6A14F; font-size:32px; letter-spacing:.22em; }
+  .date { font-family:'Marcellus',serif; color:#C9A85C; font-size:32px; letter-spacing:.22em; }
   .venue { font-family:'Cormorant Garamond',serif; color:rgba(239,232,216,.66); font-size:20px; letter-spacing:.12em; margin-top:10px; }
-  .plate { position:absolute; top:-5%; left:50%; transform:translateX(-50%); width:400px; height:172px; object-fit:cover;
-    -webkit-mask-image:linear-gradient(180deg,#000 58%,transparent 96%); mask-image:linear-gradient(180deg,#000 58%,transparent 96%);
-    opacity:.9; }
-  .sprig-bl, .sprig-br { position:absolute; bottom:-14px; width:clamp(150px, 17vw, 210px); height:auto; }
-  .sprig-bl { left:-16px; transform:scaleY(-1) rotate(8deg); opacity:.9; }
-  .sprig-br { right:-16px; transform:scaleY(-1) scaleX(-1) rotate(8deg); opacity:.9; }
+  .plate { position:absolute; top:-5%; left:50%; transform:translateX(-50%); width:520px; height:200px;
+    -webkit-mask-image:linear-gradient(180deg,#000 46%,transparent 92%); mask-image:linear-gradient(180deg,#000 46%,transparent 92%);
+    opacity:.55; }
+  .sprig-bl, .sprig-br { position:absolute; top:6px; width:clamp(150px, 17vw, 210px); height:auto; }
+  .sprig-bl { left:-14px; transform:scaleY(-1) rotate(6deg); opacity:.85; }
+  .sprig-br { right:-14px; transform:scaleY(-1) scaleX(-1) rotate(6deg); opacity:.85; }
 </style>
 </head>
 <body>
 <svg class="jaali" width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <pattern id="j" width="96" height="96" patternUnits="userSpaceOnUse">
-      <g fill="none" stroke="#C6A14F" stroke-opacity=".08">
+      <g fill="none" stroke="#C9A85C" stroke-opacity=".08">
         <polygon points="48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36"/>
         <polygon points="0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64"/>
         <polygon points="96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64"/>
@@ -50,17 +51,17 @@
   </defs>
   <rect width="1200" height="630" fill="url(#j)"/>
 </svg>
-<img class="medal" src="assets/art/inlay-medallion.webp" alt="">
-<img class="plate" src="assets/art/taj-moon.webp" alt="">
+<img class="medal" src="assets/art/medallion.svg" alt="">
+<img class="plate" src="assets/art/marble-dusk.svg" alt="">
 <div class="inner">
   <p class="shloka">Shadi Mubarak</p>
   <p class="eyebrow">With the blessings of our families</p>
   <p class="names">Ayaan &amp; Mehr</p>
-  <div class="rule"><i></i><svg viewBox="0 0 22 22" fill="none" stroke="#C6A14F" stroke-width="1.3"><path d="M11 2 L14.5 11 L11 20 L7.5 11 Z"/></svg><i></i></div>
+  <div class="rule"><i></i><svg viewBox="0 0 22 22" fill="none" stroke="#C9A85C" stroke-width="1.3"><path d="M11 2 L14.5 11 L11 20 L7.5 11 Z"/></svg><i></i></div>
   <p class="date">06 · 11 · 2027</p>
-  <p class="venue">The Taj Vista Pavilion · Agra</p>
+  <p class="venue">The Gulshan Mahal · Agra</p>
 </div>
-<img class="sprig-bl" src="assets/art/inlay-corner.webp" alt="">
-<img class="sprig-br" src="assets/art/inlay-corner.webp" alt="">
+<img class="sprig-bl" src="assets/art/gold-corner.svg" alt="">
+<img class="sprig-br" src="assets/art/gold-corner.svg" alt="">
 </body>
 </html>

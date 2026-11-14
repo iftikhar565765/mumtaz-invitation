@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" aria-hidden="true" focusable="false">
+  <!-- honed Makrana ivory marble — procedural veining, warm ivory ground -->
+  <defs>
+    <linearGradient id="mt-base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3EDDF"/>
+      <stop offset="38%" stop-color="#EFE8D8"/>
+      <stop offset="72%" stop-color="#F2EBDC"/>
+      <stop offset="100%" stop-color="#EAE1CD"/>
+    </linearGradient>
+    <filter id="mt-vein" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="turbulence" baseFrequency="0.011 0.017" numOctaves="4" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="30" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="mt-vein2" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="turbulence" baseFrequency="0.008 0.014" numOctaves="4" seed="29" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="mt-cloud">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0035 0.006" numOctaves="4" seed="4"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.63  0 0 0 0 0.58  0 0 0 0 0.47  0 0 0 0.055 0"/>
+    </filter>
+    <filter id="mt-blur"><feGaussianBlur stdDeviation="1.1"/></filter>
+  </defs>
+  <rect width="1440" height="720" fill="url(#mt-base)"/>
+  <rect width="1440" height="720" filter="url(#mt-cloud)"/>
+  <!-- the vein field: a family of meandering lines, displaced by turbulence -->
+  <g filter="url(#mt-vein2)" opacity=".5">
+    <g fill="none" stroke="#B4A98E" filter="url(#mt-blur)">
+      <path d="M -60 150 C 240 130 420 200 760 168 C 1020 144 1240 190 1500 160" stroke-width="2.1" opacity=".5"/>
+      <path d="M -60 420 C 220 448 470 392 780 420 C 1060 444 1280 400 1500 430" stroke-width="1.6" opacity=".45"/>
+      <path d="M -60 620 C 300 590 520 650 900 615 C 1180 590 1330 640 1500 612" stroke-width="1.2" opacity=".4"/>
+    </g>
+    <g fill="none" stroke="#B4A98E" filter="url(#mt-blur)">
+      <path d="M -60 156 C 240 138 420 206 760 175 C 1020 152 1240 196 1500 168" stroke-width=".7" opacity=".55"/>
+      <path d="M -60 162 C 240 146 430 210 760 182 C 1020 158 1240 202 1500 176" stroke-width=".45" opacity=".45"/>
+      <path d="M -60 428 C 220 454 470 400 780 427 C 1060 450 1280 406 1500 436" stroke-width=".6" opacity=".5"/>
+      <path d="M -60 412 C 220 440 480 386 780 414 C 1060 438 1290 396 1500 424" stroke-width=".4" opacity=".4"/>
+      <path d="M -60 614 C 300 586 520 646 900 608 C 1180 586 1330 636 1500 606" stroke-width=".5" opacity=".45"/>
+    </g>
+  </g>
+  <!-- secondary faint veins crossing at a shallower angle -->
+  <g filter="url(#mt-vein)" opacity=".35">
+    <g fill="none" stroke="#A79877" filter="url(#mt-blur)">
+      <path d="M 120 -40 C 150 180 130 380 170 760" stroke-width="1.1"/>
+      <path d="M 540 -40 C 520 200 560 420 530 760" stroke-width=".8"/>
+      <path d="M 1120 -40 C 1150 220 1110 440 1150 760" stroke-width=".9"/>
+    </g>
+  </g>
+  <!-- whisper of warmth where light would pool -->
+  <radialGradient id="mt-warm" cx="50%" cy="18%" r="80%">
+    <stop offset="0%" stop-color="#FFF9EA" stop-opacity=".5"/>
+    <stop offset="55%" stop-color="#FFF9EA" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1440" height="720" fill="url(#mt-warm)"/>
+</svg>

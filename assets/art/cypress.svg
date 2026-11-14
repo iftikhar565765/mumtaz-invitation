@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 560" aria-hidden="true" focusable="false">
+  <!-- charbagh cypress — slender, muted sage, gouache-flat -->
+  <defs>
+    <linearGradient id="cypBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8CA084"/>
+      <stop offset="55%" stop-color="#6E8265"/>
+      <stop offset="100%" stop-color="#556A50"/>
+    </linearGradient>
+    <linearGradient id="cypCore" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5F7257"/>
+      <stop offset="100%" stop-color="#42503C"/>
+    </linearGradient>
+  </defs>
+  <!-- trunk -->
+  <path d="M 116 552 L 118 470 L 122 470 L 124 552 Z" fill="#4A382A"/>
+  <!-- body: flame silhouette -->
+  <path d="M 120 18
+           C 152 64 166 132 164 214
+           C 163 292 148 366 132 428
+           C 128 444 124 456 120 470
+           C 116 456 112 444 108 428
+           C 92 366 77 292 76 214
+           C 74 132 88 64 120 18 Z"
+        fill="url(#cypBody)" stroke="#42503C" stroke-width="1.6"/>
+  <!-- inner darker core -->
+  <path d="M 120 60
+           C 140 104 150 164 148 228
+           C 147 292 138 352 124 416
+           C 116 352 108 292 106 228
+           C 104 164 104 104 120 60 Z"
+        fill="url(#cypCore)" opacity=".55"/>
+  <!-- sweeping scale strokes -->
+  <g fill="none" stroke="#3E4C39" stroke-width="1.1" opacity=".5">
+    <path d="M 92 120 C 108 112 132 112 148 120"/>
+    <path d="M 84 172 C 104 163 136 163 156 172"/>
+    <path d="M 80 226 C 102 216 138 216 160 226"/>
+    <path d="M 82 280 C 104 270 136 270 158 280"/>
+    <path d="M 88 334 C 108 324 132 324 152 334"/>
+    <path d="M 96 388 C 112 380 128 380 144 388"/>
+  </g>
+  <g fill="none" stroke="#9EB28F" stroke-width="1" opacity=".6">
+    <path d="M 96 146 C 112 139 128 139 144 146"/>
+    <path d="M 90 200 C 108 192 132 192 150 200"/>
+    <path d="M 88 254 C 106 246 134 246 152 254"/>
+    <path d="M 92 308 C 110 300 130 300 148 308"/>
+    <path d="M 98 360 C 112 353 128 353 142 360"/>
+  </g>
+  <!-- the finial tip -->
+  <g stroke="#96702F" fill="none">
+    <path d="M 120 18 C 120 12 120 8 120 4" stroke-width="1.2"/>
+    <circle cx="120" cy="3" r="2.4" fill="#C9A85C" stroke="none"/>
+  </g>
+</svg>

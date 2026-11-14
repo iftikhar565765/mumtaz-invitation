@@ -1,7 +1,7 @@
-# Mumtaz — a Taj Mahal wedding invitation
+# Mumtaz — an ivory-and-gold wedding invitation
 
 *Mumtaz* — "the chosen one of the palace", the name the world remembers
-from the Taj Mahal — is a wedding invitation reimagined as **the ivory
+of the Taj Mahal's marble — is a wedding invitation reimagined as **the ivory
 monument itself at first light**. The guest lifts the veil at the great
 gate — an ivory-silk envelope sealed with the gold dome seal — and walks
 the pavilion: the names flourishing on a Makrana-marble card beneath a

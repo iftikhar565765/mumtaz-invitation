@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" aria-hidden="true" focusable="false">
+  <!-- pietra dura carnelian poppy spray — flat stone-inlay style, matte, hairline gold -->
+  <defs>
+    <radialGradient id="poppyC" cx="50%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#B9633B"/>
+      <stop offset="58%" stop-color="#A64B2A"/>
+      <stop offset="100%" stop-color="#8A3B1E"/>
+    </radialGradient>
+    <linearGradient id="leafJ" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7E9273"/>
+      <stop offset="100%" stop-color="#5C6F55"/>
+    </linearGradient>
+  </defs>
+  <g fill="none">
+    <!-- stems -->
+    <path d="M 178 470 C 168 380 160 300 152 218 C 148 174 144 132 141 96" stroke="#5C6F55" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M 176 402 C 208 366 234 322 247 268" stroke="#5C6F55" stroke-width="2" stroke-linecap="round"/>
+    <!-- leaves -->
+    <path d="M 156 330 C 128 314 112 288 112 258 C 138 272 154 298 156 330 Z" fill="url(#leafJ)" stroke="#4E6047" stroke-width="1"/>
+    <path d="M 168 288 C 196 274 212 250 214 220 C 188 232 172 256 168 288 Z" fill="url(#leafJ)" stroke="#4E6047" stroke-width="1"/>
+    <path d="M 176 430 C 148 418 132 398 128 372 C 152 382 168 404 176 430 Z" fill="url(#leafJ)" stroke="#4E6047" stroke-width="1"/>
+    <!-- small bud on right stem -->
+    <g transform="translate(247 268) rotate(18)">
+      <path d="M 0 14 C -9 6 -10 -10 0 -24 C 10 -10 9 6 0 14 Z" fill="url(#poppyC)" stroke="#6E2F16" stroke-width="1"/>
+      <path d="M 0 14 C -4 18 -10 20 -16 18 C -12 12 -6 10 0 14 Z" fill="url(#leafJ)" stroke="#4E6047" stroke-width=".8"/>
+      <path d="M 0 14 C 4 18 10 20 16 18 C 12 12 6 10 0 14 Z" fill="url(#leafJ)" stroke="#4E6047" stroke-width=".8"/>
+    </g>
+  </g>
+  <!-- the great poppy -->
+  <g transform="translate(138 108)">
+    <g fill="url(#poppyC)" stroke="#6E2F16" stroke-width="1.1">
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z"/>
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z" transform="rotate(72)"/>
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z" transform="rotate(144)"/>
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z" transform="rotate(216)"/>
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z" transform="rotate(288)"/>
+    </g>
+    <g stroke="#D9A16B" stroke-width=".9" fill="none" opacity=".85">
+      <path d="M 0 -10 C -8 -18 -12 -30 -10 -42" transform="rotate(20)"/>
+      <path d="M 0 -10 C -8 -18 -12 -30 -10 -42" transform="rotate(92)"/>
+      <path d="M 0 -10 C -8 -18 -12 -30 -10 -42" transform="rotate(164)"/>
+      <path d="M 0 -10 C -8 -18 -12 -30 -10 -42" transform="rotate(236)"/>
+      <path d="M 0 -10 C -8 -18 -12 -30 -10 -42" transform="rotate(308)"/>
+    </g>
+    <circle r="7" fill="#8A3B1E" stroke="#D9A16B" stroke-width="1.2"/>
+    <circle r="2.6" fill="#D9A16B"/>
+  </g>
+  <!-- the lesser poppy -->
+  <g transform="translate(206 226) scale(.68)">
+    <g fill="url(#poppyC)" stroke="#6E2F16" stroke-width="1.4">
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z" transform="rotate(36)"/>
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z" transform="rotate(108)"/>
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z" transform="rotate(180)"/>
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z" transform="rotate(252)"/>
+      <path d="M 0 -8 C -18 -18 -28 -40 -16 -56 C -8 -66 8 -66 16 -56 C 28 -40 18 -18 0 -8 Z" transform="rotate(324)"/>
+    </g>
+    <circle r="6" fill="#8A3B1E" stroke="#D9A16B" stroke-width="1.1"/>
+    <circle r="2.2" fill="#D9A16B"/>
+  </g>
+</svg>

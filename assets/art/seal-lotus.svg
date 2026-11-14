@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" aria-hidden="true" focusable="false">
+  <!-- the wax seal — antique matte gold, embossed lotus, hand-poured edge -->
+  <defs>
+    <radialGradient id="waxBody" cx="44%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#C9A45C"/>
+      <stop offset="52%" stop-color="#B08A3E"/>
+      <stop offset="84%" stop-color="#8E6524"/>
+      <stop offset="100%" stop-color="#774F1A"/>
+    </radialGradient>
+    <radialGradient id="waxPet" cx="50%" cy="30%" r="76%">
+      <stop offset="0%" stop-color="#E3C487"/>
+      <stop offset="60%" stop-color="#C39B52"/>
+      <stop offset="100%" stop-color="#9A732D"/>
+    </radialGradient>
+    <filter id="waxSoft" x="-12%" y="-12%" width="124%" height="124%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <filter id="waxGrain" x="-4%" y="-4%" width="108%" height="108%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.4  0 0 0 0 0.18  0 0 0 0.16 0" result="tint"/>
+      <feComposite in="tint" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <!-- hand-poured blob edge -->
+  <path d="M 140 12
+           C 176 10 204 24 224 44 C 246 66 258 92 262 124 C 268 158 258 190 240 214
+           C 222 240 194 260 160 266 C 126 272 92 262 66 242 C 42 224 22 198 18 166
+           C 12 132 20 100 40 74 C 62 44 100 14 140 12 Z"
+        fill="url(#waxBody)" stroke="#6E4917" stroke-width="1.4"/>
+  <path d="M 140 12
+           C 176 10 204 24 224 44 C 246 66 258 92 262 124 C 268 158 258 190 240 214
+           C 222 240 194 260 160 266 C 126 272 92 262 66 242 C 42 224 22 198 18 166
+           C 12 132 20 100 40 74 C 62 44 100 14 140 12 Z"
+        filter="url(#waxGrain)" opacity=".5"/>
+  <!-- poured pools (subtle) -->
+  <g filter="url(#waxSoft)" opacity=".22" fill="#6E4917">
+    <ellipse cx="56" cy="188" rx="22" ry="11"/>
+    <ellipse cx="226" cy="106" rx="18" ry="9"/>
+  </g>
+  <g filter="url(#waxSoft)" opacity=".24" fill="#E7CB8C">
+    <ellipse cx="112" cy="62" rx="32" ry="12" transform="rotate(-14 112 62)"/>
+  </g>
+  <!-- beaded stamp ring -->
+  <circle cx="140" cy="140" r="92" fill="none" stroke="#774F1A" stroke-width="7" stroke-opacity=".45"/>
+  <circle cx="140" cy="140" r="86" fill="none" stroke="#E3C487" stroke-width="1.6" stroke-dasharray="1 7.4" stroke-linecap="round"/>
+  <circle cx="140" cy="140" r="80" fill="none" stroke="#774F1A" stroke-width="1.2" stroke-opacity=".6"/>
+  <!-- the embossed lotus -->
+  <g transform="translate(140 152)">
+    <g fill="url(#waxPet)" stroke="#774F1A" stroke-width=".9">
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(45)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(90)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(135)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(180)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(225)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(270)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(315)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(22.5) scale(.78)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(67.5) scale(.78)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(112.5) scale(.78)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(157.5) scale(.78)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(202.5) scale(.78)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(247.5) scale(.78)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(292.5) scale(.78)"/>
+      <path d="M 0 6 C -11 -2 -14 -26 0 -44 C 14 -26 11 -2 0 6 Z" transform="rotate(337.5) scale(.78)"/>
+    </g>
+    <circle r="8" fill="#B08A3E" stroke="#774F1A" stroke-width="1.1"/>
+    <circle r="3" fill="#E3C487"/>
+  </g>
+</svg>

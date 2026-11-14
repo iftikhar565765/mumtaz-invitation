@@ -297,7 +297,7 @@
     'palette-dresscode': 'Dress code note',
     'day-words': 'The garland of moments',
     'venue-ornament': 'The marble pavilion',
-    'venue-diya': 'The courtyard bowl',
+    'venue-arch': 'The marble arch',
     'rsvp-watermark': 'RSVP watermark',
     'rsvp-ornament': 'RSVP ornament',
     'countdown-clock': 'Countdown clock',
@@ -662,12 +662,12 @@
 
   var themePresets = {
     /* moods of the monument — the default taj (Mumtaz) suite:
-       Makrana-ivory papers, lapis dusk nights, carnelian accents,
+       Makrana-ivory papers, warm umber dusk nights, carnelian accents,
        champagne-gold hairlines and a mother-of-pearl envelope,
        with jade and pale-jade greens. Night tones appear in the
        lapis interludes & the opening. The other moods remain
        available through the editor.                               */
-    taj:      { burgundy: '#A9502E', deep: '#8A3F24', wine: '#24385A', crimson: '#D89A7C', champagne: '#C6A14F', soft: '#A5823C', parchment: '#EFE8D8', ivory: '#F7F3EA', paper: '#FDFBF5', night: '#1B2E4A', nightDeep: '#101F35', olive: '#3E6B52', oliveDeep: '#2B5040', sage: '#A6BBA9', rose: '#E9D3C0', ink: '#332C24', inkSoft: '#6C5D4D', charcoal: '#A99E8F' },
+    taj:      { burgundy: '#A3492A', deep: '#823A1F', wine: '#3A2C20', crimson: '#E2B995', champagne: '#B98A3E', soft: '#96702F', parchment: '#EFE7D6', ivory: '#F2EDE2', paper: '#FBF8F1', night: '#362A1E', nightDeep: '#261D14', olive: '#6E8265', oliveDeep: '#556A50', sage: '#A9B8A6', rose: '#E9D3C0', ink: '#33261B', inkSoft: '#6E5A46', charcoal: '#A99C8B' },
     rani:     { burgundy: '#A4284C', deep: '#7C1B3A', wine: '#520F26', crimson: '#D8748D', champagne: '#D69A45', soft: '#B37733', parchment: '#F6E8D2', ivory: '#FBF3E2', paper: '#FEFAF0', night: '#43111F', nightDeep: '#2E0A15', olive: '#5A7A3A', oliveDeep: '#3F5B28', sage: '#A9B380', rose: '#F0C7B7', ink: '#38201A', inkSoft: '#6E4E38', charcoal: '#A3866C' },
     marigold: { burgundy: '#C05C14', deep: '#964309', wine: '#5C2406', crimson: '#E08A2E', champagne: '#D6A02E', soft: '#A87A1C', parchment: '#FAF0D2', ivory: '#FCF5DE', paper: '#FFFBEC', night: '#3A1D08', nightDeep: '#2A1204', olive: '#5F7A2A', oliveDeep: '#455C1B', sage: '#ACB579', rose: '#EDC078', ink: '#3A2610', inkSoft: '#715121', charcoal: '#A8906C' },
     peacock:  { burgundy: '#33714A', deep: '#245C37', wine: '#12351F', crimson: '#5FA36E', champagne: '#D6A02E', soft: '#A87A1C', parchment: '#EDF4E4', ivory: '#F3F8EA', paper: '#FBFEF4', night: '#14301E', nightDeep: '#0C2013', olive: '#3E7A46', oliveDeep: '#2A5C33', sage: '#8FB491', rose: '#BFD9AE', ink: '#16291B', inkSoft: '#3E5C44', charcoal: '#7E9A80' },

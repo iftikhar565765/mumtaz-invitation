@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480" aria-hidden="true" focusable="false">
+  <!-- pietra dura jade blossom spray with lapis buds — flat stone-inlay, matte -->
+  <defs>
+    <radialGradient id="bloomJ" cx="50%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#8FA37E"/>
+      <stop offset="58%" stop-color="#75886C"/>
+      <stop offset="100%" stop-color="#5A6D52"/>
+    </radialGradient>
+    <radialGradient id="budL" cx="50%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#64809C"/>
+      <stop offset="100%" stop-color="#445C77"/>
+    </radialGradient>
+    <linearGradient id="leafJ2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7E9273"/>
+      <stop offset="100%" stop-color="#5C6F55"/>
+    </linearGradient>
+  </defs>
+  <g fill="none">
+    <path d="M 186 470 C 180 386 172 306 168 232 C 166 196 166 162 170 130" stroke="#5C6F55" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M 181 386 C 214 356 236 320 246 278" stroke="#5C6F55" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 174 312 C 146 300 128 278 124 248 C 150 258 168 280 174 312 Z" fill="url(#leafJ2)" stroke="#4E6047" stroke-width="1"/>
+    <path d="M 176 262 C 204 252 222 232 228 202 C 202 212 184 232 176 262 Z" fill="url(#leafJ2)" stroke="#4E6047" stroke-width="1"/>
+    <path d="M 182 436 C 154 426 136 406 132 378 C 158 390 174 410 182 436 Z" fill="url(#leafJ2)" stroke="#4E6047" stroke-width="1"/>
+    <!-- twin lapis buds -->
+    <g transform="translate(246 278) rotate(16)">
+      <path d="M 0 12 C -8 5 -9 -9 0 -21 C 9 -9 8 5 0 12 Z" fill="url(#budL)" stroke="#33475C" stroke-width="1"/>
+      <path d="M 0 12 C -3 16 -8 18 -13 16 C -10 11 -5 9 0 12 Z" fill="url(#leafJ2)" stroke="#4E6047" stroke-width=".8"/>
+      <path d="M 0 12 C 3 16 8 18 13 16 C 10 11 5 9 0 12 Z" fill="url(#leafJ2)" stroke="#4E6047" stroke-width=".8"/>
+    </g>
+  </g>
+  <!-- jade blossom -->
+  <g transform="translate(170 128)">
+    <g fill="url(#bloomJ)" stroke="#48573F" stroke-width="1.1">
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z"/>
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z" transform="rotate(72)"/>
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z" transform="rotate(144)"/>
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z" transform="rotate(216)"/>
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z" transform="rotate(288)"/>
+    </g>
+    <g stroke="#C9D4B4" stroke-width=".8" fill="none" opacity=".8">
+      <path d="M 0 -10 C -7 -17 -11 -28 -9 -39" transform="rotate(36)"/>
+      <path d="M 0 -10 C -7 -17 -11 -28 -9 -39" transform="rotate(108)"/>
+      <path d="M 0 -10 C -7 -17 -11 -28 -9 -39" transform="rotate(180)"/>
+      <path d="M 0 -10 C -7 -17 -11 -28 -9 -39" transform="rotate(252)"/>
+      <path d="M 0 -10 C -7 -17 -11 -28 -9 -39" transform="rotate(324)"/>
+    </g>
+    <circle r="6" fill="#5A6D52" stroke="#C9A85C" stroke-width="1.1"/>
+    <circle r="2.2" fill="#C9A85C"/>
+  </g>
+  <!-- small lapis companion bloom -->
+  <g transform="translate(122 210) scale(.55)">
+    <g fill="url(#budL)" stroke="#33475C" stroke-width="1.6">
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z" transform="rotate(36)"/>
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z" transform="rotate(108)"/>
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z" transform="rotate(180)"/>
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z" transform="rotate(252)"/>
+      <path d="M 0 -8 C -16 -16 -24 -36 -14 -50 C -7 -59 7 -59 14 -50 C 24 -36 16 -16 0 -8 Z" transform="rotate(324)"/>
+    </g>
+    <circle r="6" fill="#445C77" stroke="#C9A85C" stroke-width="1.6"/>
+    <circle r="2.2" fill="#C9A85C"/>
+  </g>
+</svg>

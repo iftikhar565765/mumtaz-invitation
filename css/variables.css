@@ -1,34 +1,34 @@
 /* ═══════════════════════════════════════════════════════════════
    MUMTAZ · variables.css — the ivory-monument design system
    ---------------------------------------------------------------
-   Not a rose garden — a marble pavilion at first light. The suite
-   is built from six materials: Makrana ivory, lapis dusk, carnelian,
-   jade, rose quartz and champagne gold — the palette of the Taj
-   Mahal's parchin-kari inlay. Every colour token is overwritten at
-   runtime by main.js applyTheme(), so the editor moods recolour
-   the whole monument. Defaults mirror the taj (ivory) preset.
+   Built from six materials of the monument itself: Makrana ivory,
+   champagne gold, jasper-brown ink, and the whisper-colours of the
+   parchin-kari inlay — carnelian, jade, lapis. Dark bands are warm
+   umber marble at dusk (never navy). Every colour token is
+   overwritten at runtime by main.js applyTheme(); defaults mirror
+   the taj (ivory) preset.
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
   /* ── the mumtaz palette (taj mood — ivory monument) ────────── */
-  --burgundy:      #A9502E;   /* carnelian — primary accent       */
-  --burgundy-deep: #8A3F24;   /* compressed carnelian             */
-  --wine:          #24385A;   /* deep lapis — strong accents      */
-  --crimson:       #D89A7C;   /* rose-quartz blush — light accent */
-  --champagne:     #C6A14F;   /* champagne gold                   */
-  --champagne-soft:#A5823C;   /* burnished gold                   */
-  --parchment:     #EFE8D8;   /* warm marble cream                */
-  --ivory:         #F7F3EA;   /* Makrana ivory page ground        */
-  --paper-raised:  #FDFBF5;   /* raised card paper                */
-  --night:         #1B2E4A;   /* lapis dusk (dark bands)          */
-  --night-deep:    #101F35;
-  --olive:         #3E6B52;   /* jade                             */
-  --olive-deep:    #2B5040;
-  --sage:          #A6BBA9;   /* pale jade                        */
+  --burgundy:      #A3492A;   /* carnelian — primary accent       */
+  --burgundy-deep: #823A1F;   /* compressed carnelian             */
+  --wine:          #3A2C20;   /* dusk umber — warm dark accents   */
+  --crimson:       #E2B995;   /* pearl-blush — light accent       */
+  --champagne:     #B98A3E;   /* antique gold                     */
+  --champagne-soft:#96702F;   /* burnished gold                   */
+  --parchment:     #EFE7D6;   /* warm marble cream                */
+  --ivory:         #F2EDE2;   /* Makrana ivory page ground        */
+  --paper-raised:  #FBF8F1;   /* raised card paper                */
+  --night:         #362A1E;   /* umber dusk (dark bands)          */
+  --night-deep:    #261D14;   /* deep espresso                    */
+  --olive:         #6E8265;   /* jade                             */
+  --olive-deep:    #556A50;
+  --sage:          #A9B8A6;   /* pale jade                        */
   --rose:          #E9D3C0;   /* mother-of-pearl blush            */
-  --ink:           #332C24;   /* jasper-ink (calligraphy black)   */
-  --ink-soft:      #6C5D4D;
-  --charcoal:      #A99E8F;
+  --ink:           #33261B;   /* jasper-ink (calligraphy black)   */
+  --ink-soft:      #6E5A46;   /* jasper umber                     */
+  --charcoal:      #A99C8B;
 
   /* ── derived golds ────────────────────────────────────────── */
   --gold:          var(--champagne);
@@ -45,7 +45,7 @@
 
   /* ── the monument's own derived tones — dawn over the river ─ */
   --sky-1:         var(--night-deep);
-  --sky-2:         color-mix(in srgb, var(--night) 84%, var(--wine) 16%);
+  --sky-2:         color-mix(in srgb, var(--night) 84%, var(--burgundy) 16%);
   --glass:         color-mix(in srgb, var(--night) 55%, transparent);
   --glass-deep:    color-mix(in srgb, var(--night-deep) 72%, transparent);
   --glass-edge:    color-mix(in srgb, var(--champagne) 26%, transparent);
@@ -60,10 +60,10 @@
   /* ── luxury hardware — hairlines and soft shadow layers ───── */
   --line:          color-mix(in srgb, var(--champagne) 44%, transparent);
   --line-strong:   color-mix(in srgb, var(--champagne-soft) 72%, transparent);
-  --shadow-soft:   0 14px 40px -18px color-mix(in srgb, var(--night) 55%, transparent),
-                   0 4px 14px -8px color-mix(in srgb, var(--night) 30%, transparent);
-  --shadow-lift:   0 26px 60px -26px color-mix(in srgb, var(--night) 62%, transparent),
-                   0 8px 22px -12px color-mix(in srgb, var(--night) 38%, transparent);
+  --shadow-soft:   0 14px 40px -18px color-mix(in srgb, var(--night-deep) 42%, transparent),
+                   0 4px 14px -8px color-mix(in srgb, var(--night-deep) 24%, transparent);
+  --shadow-lift:   0 26px 60px -26px color-mix(in srgb, var(--night-deep) 48%, transparent),
+                   0 8px 22px -12px color-mix(in srgb, var(--night-deep) 30%, transparent);
   --shadow-card:   var(--shadow-lift);
   --shadow-gold:   0 1px 0 rgba(255, 248, 224, .6) inset;
 

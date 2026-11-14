@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" aria-hidden="true" focusable="false">
+  <!-- fine goldwork corner — two slender filigree sprays, top-left orientation -->
+  <defs>
+    <radialGradient id="gBloom" cx="50%" cy="34%" r="72%">
+      <stop offset="0%" stop-color="#D6B470"/><stop offset="100%" stop-color="#A5823C"/>
+    </radialGradient>
+    <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C4A15F"/><stop offset="100%" stop-color="#96702F"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#A5823C" stroke-width="1.5" stroke-linecap="round">
+    <!-- spray riding the top edge -->
+    <path d="M 8 44 C 96 34 210 42 330 74 C 404 94 452 118 494 150" stroke-width="1.4"/>
+    <path d="M 8 52 C 92 44 196 52 308 84 C 376 104 424 128 462 158" stroke-width=".9" opacity=".7"/>
+    <!-- spray riding the left edge -->
+    <path d="M 44 8 C 34 96 42 210 74 330 C 94 404 118 452 150 494" stroke-width="1.4"/>
+    <path d="M 52 8 C 44 92 52 196 84 308 C 104 376 128 424 158 462" stroke-width=".9" opacity=".7"/>
+  </g>
+  <!-- blooms along the top spray -->
+  <g fill="url(#gBloom)" stroke="#8E6524" stroke-width="1">
+    <g transform="translate(120 44)">
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(72)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(144)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(216)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(288)"/>
+      <circle r="2.6" fill="#F3E3BC"/>
+    </g>
+    <g transform="translate(300 72) scale(.8)">
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(72)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(144)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(216)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(288)"/>
+      <circle r="3.2" fill="#F3E3BC"/>
+    </g>
+    <g transform="translate(440 128) scale(.62)">
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(72)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(144)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(216)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(288)"/>
+      <circle r="4" fill="#F3E3BC"/>
+    </g>
+    <g transform="translate(62 300) scale(.8)">
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(72)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(144)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(216)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(288)"/>
+      <circle r="3.2" fill="#F3E3BC"/>
+    </g>
+    <g transform="translate(128 440) scale(.62)">
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(72)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(144)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(216)"/>
+      <path d="M 0 -4 C -9 -9 -13 -20 -7 -28 C -3 -33 3 -33 7 -28 C 13 -20 9 -9 0 -4 Z" transform="rotate(288)"/>
+      <circle r="4" fill="#F3E3BC"/>
+    </g>
+  </g>
+  <!-- slender gold leaves -->
+  <g fill="url(#gLeaf)" stroke="#8E6524" stroke-width=".8">
+    <path d="M 190 52 C 202 40 220 34 238 38 C 226 50 208 56 190 52 Z"/>
+    <path d="M 376 96 C 384 82 400 72 418 72 C 410 88 396 98 376 96 Z"/>
+    <path d="M 52 190 C 40 202 34 220 38 238 C 50 226 56 208 52 190 Z"/>
+    <path d="M 96 376 C 82 384 72 400 72 418 C 88 410 98 396 96 376 Z"/>
+    <path d="M 250 62 C 260 52 274 48 288 50 C 278 62 264 66 250 62 Z"/>
+    <path d="M 62 250 C 52 260 48 274 50 288 C 62 278 66 264 62 250 Z"/>
+  </g>
+  <!-- bead stops -->
+  <g fill="#A5823C">
+    <circle cx="494" cy="150" r="3"/>
+    <circle cx="330" cy="74" r="2.2"/>
+    <circle cx="150" cy="494" r="3"/>
+    <circle cx="74" cy="330" r="2.2"/>
+    <circle cx="208" cy="48" r="2.2"/>
+    <circle cx="48" cy="208" r="2.2"/>
+  </g>
+  <!-- corner knot -->
+  <g fill="none" stroke="#A5823C" stroke-width="1.1">
+    <circle cx="26" cy="26" r="14"/>
+    <circle cx="26" cy="26" r="6" fill="#D6B470" stroke="#8E6524" stroke-width="1"/>
+  </g>
+</svg>
