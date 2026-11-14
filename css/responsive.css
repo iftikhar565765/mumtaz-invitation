@@ -7,13 +7,13 @@
   /* the card corners hug the smaller card */
   .korn--spray-tl { left: -7%; width: 24%; }
   .korn--spray-tr { right: -7%; width: 24%; }
-  .korn--bell-tl { left: 13%; width: 14%; }
-  .korn--bell-tr { right: 13%; width: 14%; }
-  .korn--jasmine-l { left: -8.5%; width: 20%; bottom: 12%; }
-  .korn--jasmine-r { right: -8.5%; width: 20%; bottom: 12%; }
+  .korn--bell-tl { left: -1%; width: 50%; }
+  .korn--bell-tr { right: -1%; width: 50%; }
+  .korn--jasmine-l { left: -9%; width: 17%; bottom: 27%; }
+  .korn--jasmine-r { right: -9%; width: 17%; bottom: 23%; }
   .korn--pavilion { width: 8.4%; margin-left: -4.2%; top: -3.6%; }
-  .korn--spray-bl { width: 26%; left: -6%; }
-  .korn--spray-br { width: 26%; right: -6%; }
+  .korn--spray-bl { width: 30%; left: -6%; }
+  .korn--spray-br { width: 30%; right: -6%; }
 
   /* the water channel moves to the left margin */
   .programme::before { left: 27px; }
@@ -56,7 +56,7 @@
   .day-word { width: 96px; }
 
   .venue-stage { width: 94%; aspect-ratio: 560 / 470; }
-  .venue-cypress { width: 15%; top: -5%; }
+  .venue-cypress { width: 22%; top: -2%; }
 
   .opening__florals--tl,
   .opening__florals--tr { width: clamp(8rem, 26vw, 11.5rem); }
@@ -80,10 +80,10 @@
 
   .korn--spray-tl { top: -2.2%; left: -8%; width: 27%; }
   .korn--spray-tr { top: -2.2%; right: -8%; width: 27%; }
-  .korn--bell-tl { left: 10%; }
-  .korn--bell-tr { right: 10%; }
-  .korn--jasmine-l { left: -10%; width: 24%; }
-  .korn--jasmine-r { right: -10%; width: 24%; }
+  .korn--bell-tl { left: -1%; }
+  .korn--bell-tr { right: -1%; }
+  .korn--jasmine-l { left: -9.5%; width: 18%; }
+  .korn--jasmine-r { right: -9.5%; width: 18%; }
   .korn--pavilion { width: 9.6%; margin-left: -4.8%; top: -3.2%; }
   .korn--spray-bl { left: -8%; width: 30%; }
   .korn--spray-br { right: -8%; width: 30%; }

@@ -101,16 +101,16 @@
   to   { opacity: 1; }
 }
 
-/* the watermark — محبت (mohabbat · love), huge and faint */
+/* the watermark — शुभ विवाह (shubh vivah · auspicious wedding), huge and faint */
 .opening__watermark {
   position: absolute;
   z-index: 0;
   left: 50%;
   top: 44%;
   transform: translate(-50%, -50%);
-  font-family: var(--font-urdu);
+  font-family: var(--font-deva);
   font-size: clamp(5rem, 15vw, 12rem);
-  line-height: 1.7;
+  line-height: 1.45;
   white-space: nowrap;
   color: color-mix(in srgb, var(--champagne) 8%, transparent);
   pointer-events: none;
@@ -458,15 +458,17 @@
   position: absolute;
   inset: 0;
   display: grid;
-  place-items: end center;
-  padding-bottom: 15%;
+  place-items: center;
+  padding-bottom: 3%;
   box-sizing: border-box;
-  font-size: clamp(.52rem, 1.5vw, .66rem);
-  letter-spacing: .14em;
-  color: #4E3A12;
+  font-family: var(--font-display);
+  font-size: clamp(.62rem, 1.8vw, .78rem);
+  letter-spacing: .12em;
+  color: #3B2C0C;
   text-shadow:
-    0 1px 0 rgba(255, 240, 200, .5),
-    0 -1px 0 rgba(90, 62, 20, .35);
+    0 0 6px rgba(253, 251, 243, .95),
+    0 0 2px rgba(253, 251, 243, .9),
+    0 1px 0 rgba(90, 62, 20, .25);
 }
 
 .envelope:active .envelope__seal-wrap {

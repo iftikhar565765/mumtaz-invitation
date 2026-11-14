@@ -79,7 +79,7 @@
   --font-hand:      'La Belle Aurore', 'Bradley Hand', 'Segoe Script', cursive;
   --font-body:      'EB Garamond', 'Georgia', serif;
   --font-ui:        'Jost', 'Trebuchet MS', 'Segoe UI', sans-serif;
-  --font-urdu:      'Gulzar', 'Noto Nastaliq Urdu', 'Nirmala UI', serif;
+  --font-deva:      'Tiro Devanagari Hindi', 'Rozha One', 'Noto Sans Devanagari', serif;
 
   /* ── flow of type sizes ───────────────────────────────────── */
   --fs-hero-names:  clamp(3.4rem, 9vw, 6.2rem);

@@ -12,10 +12,10 @@ window.HEIRLOOM = {
 
   /* ── The couple — SAMPLE content, replace with your names ────── */
   couple: {
-    partnerOne: "Ayaan",                    // SAMPLE
-    partnerTwo: "Mehr",                     // SAMPLE
+    partnerOne: "Arjun",                    // SAMPLE
+    partnerTwo: "Meera",                     // SAMPLE
     initials:  "A · M",                     // SAMPLE — used on seals & monograms
-    namesLine: "Ayaan & Mehr"               // SAMPLE — used across the site
+    namesLine: "Arjun & Meera"               // SAMPLE — used across the site
   },
 
   /* ── The wedding date & time ─────────────────────────────────
@@ -37,7 +37,7 @@ window.HEIRLOOM = {
     year: "2027",                                                            // EDIT
     muhuratLabel: "Pheras",                                                  // EDIT
     muhurat: "10:18 in the morning",                                         // EDIT
-    eventTitle: "Ayaan & Mehr — Wedding"                                     // EDIT (calendar entry)
+    eventTitle: "Arjun & Meera — Wedding"                                     // EDIT (calendar entry)
   },
 
   /* ── The venue ──────────────────────────────────────────────── */
@@ -53,9 +53,9 @@ window.HEIRLOOM = {
   /* ── Copy shown throughout the invitation ────────────────────
      The visual editor can change these values without editing HTML. */
   content: {
-    pageTitle: "Ayaan & Mehr · 6 November 2027 — An Invitation in Ivory & Gold",
-    pageDescription: "Ayaan and Mehr request the honour of your presence at The Gulshan Mahal, a private riverside garden in Agra — two days of mehndi, qawwali and the sacred pheras at 10:18 on Saturday the sixth of November 2027. Open your invitation.",
-    socialTitle: "Ayaan & Mehr — An Invitation · 06.11.2027",
+    pageTitle: "Arjun & Meera · 6 November 2027 — An Invitation in Ivory & Gold",
+    pageDescription: "Arjun and Meera request the honour of your presence at The Gulshan Mahal, a private riverside garden in Agra — two days of mehndi, sangeet and the sacred pheras at 10:18 on Saturday the sixth of November 2027. Open your invitation.",
+    socialTitle: "Arjun & Meera — An Invitation · 06.11.2027",
     socialDescription: "Ivory marble, champagne gold and a happily ever after — you are cordially invited.",
     navStory: "Story",
     navDetails: "Events",
@@ -97,7 +97,7 @@ window.HEIRLOOM = {
     storyCaptionFour: "the seven vows",
     storyAside: "and they lived",
     saveDateTitle: "Save the Date",
-    saveDateCrossing: "two days of roses, qawwali & sacred vows",
+    saveDateCrossing: "two days of roses, sangeet & sacred vows",
     saveDateNote: "Add the date to your calendar and keep these particulars close.",
     calendarDownloadLabel: "Add to Calendar",
     calendarGoogleLabel: "Google Calendar",
@@ -111,13 +111,13 @@ window.HEIRLOOM = {
     mehndiLabel: "The Mehndi",
     mehndiTime: "Friday, 5 November 2027 · four in the afternoon",
     mehndiNote: "Henna in the shape of domes and vines, folk songs, and rose sherbet under the arches.",
-    ceremonyLabel: "The Qawwali Night",
+    ceremonyLabel: "The Sangeet",
     ceremonyTime: "Friday, 5 November 2027 · half past seven in the evening",
-    ceremonyNote: "An evening of qawwali and ghazals on marble — bring your hearts, and your dancing shoes.",
+    ceremonyNote: "An evening of sangeet and dance on marble — bring your hearts, and your dancing shoes.",
     receptionLabel: "The Pheras",
     receptionTime: "Saturday, 6 November 2027 · 10:18 in the morning",
     receptionNote: "Seven vows, seven steps and the mangalsutra — as the shehnai plays beneath the arches.",
-    feastLabel: "The Walima",
+    feastLabel: "The Reception",
     feastTime: "Saturday, 6 November 2027 · half past seven in the evening",
     feastNote: "A candlelit feast in the marble hall — the banquet the emperors would recognise.",
     kindlyReplyLabel: "Kindly Reply",
@@ -145,14 +145,14 @@ window.HEIRLOOM = {
     venueDescription: "A private riverside garden estate of marble courts and cusped pavilions — jali light at noon, candles at dusk, shehnai at the gate, and roses on every table.",
     venueCeremonyLabel: "Pheras",
     venueCeremonyText: "in the garden mandap, as the shehnai plays",
-    venueReceptionLabel: "Walima",
+    venueReceptionLabel: "Reception",
     venueReceptionText: "candlelit dinner in the marble hall",
     mapButton: "View Location",
     rsvpKicker: "Your Reply",
     rsvpTitle: "Kindly Respond",
     rsvpLead: "Kindly reply by",
     rsvpNameLabel: "Your name",
-    rsvpNamePlaceholder: "e.g. Mehrunissa Khan",
+    rsvpNamePlaceholder: "e.g. Ananya Sharma",
     rsvpNameError: "May we have your name? Two letters or more will do.",
     rsvpAttendanceLabel: "Will you be joining us?",
     rsvpAcceptLabel: "Joyfully accepts",
@@ -200,7 +200,7 @@ window.HEIRLOOM = {
 
   /* ── Wedding festivities — SAMPLE words for the garland.
      Use one short phrase per entry; an empty list hides the section. */
-  moments: ["The Mehndi", "The Haldi", "The Qawwali", "The Pheras", "The Walima", "The Blessings"],
+  moments: ["The Mehndi", "The Haldi", "The Sangeet", "The Pheras", "The Reception", "The Blessings"],
 
   /* ── RSVP ─────────────────────────────────────────────────────
      endpoint : leave "" for the honest demonstration mode — the
