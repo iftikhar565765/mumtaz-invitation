@@ -11,12 +11,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "kalyanam-invitations",
-      // Shared D1 database (same library the other invitations use).
-      // One-time setup: create the D1 database, then paste its id here.
-      //   npx wrangler d1 create kalyanam-invitations
-      // (DEPLOY.md walks through this step by step.)
-      "database_id": "256ed4c8-8387-4d2d-9989-d34b68919bc8"
+      "database_name": "mumtaz-invitations",
+      "database_id": "dfeca9e2-e920-466a-8d5d-49be01a1a121"
     }
   ]
 }
