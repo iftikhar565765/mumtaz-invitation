@@ -1188,9 +1188,9 @@
   top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: var(--font-urdu);
+  font-family: var(--font-deva);
   font-size: clamp(5rem, 14vw, 10rem);
-  line-height: 1.6;
+  line-height: 1.4;
   white-space: nowrap;
   color: color-mix(in srgb, var(--champagne-soft) 9%, transparent);
   pointer-events: none;

@@ -89,5 +89,5 @@ candlelight — never navy blue.
 ### 6. Copy register
 No "Taj" literals, no venue-hotel language. The monument is felt, never named:
 "where marble keeps its promise", "a garden in four parts", "the river remembers".
-Event names: Haldi, Mehndi, Qawwali Night, Pheras, Walima (kept). Venue becomes
+Event names: Haldi, Mehndi, Sangeet, Pheras, Reception (a Hindu wedding, not a Muslim one — no qawwali, no walima). Venue becomes
 "The Marble Pavilion — Sundar Bagh, Agra" (fictional riverfront garden estate).
