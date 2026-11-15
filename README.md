@@ -37,8 +37,9 @@ on Cloudflare.
 ornaments, a gilded finial, the gold dome seal, a brass urli of floating
 candles, cypress and garden roses, and three photographic plates: the
 Taj at dawn, the Taj under a full moon, and the marble pavilion at dusk.
-Geometric ornaments (the eight-point star jali, the cusped pishtaq
-arches, the shamsa rosette) are drawn as inline SVG.
+Architectural ornaments (the cusped pishtaq arches, the shamsa rosette,
+the paisley frieze) are drawn as inline SVG; every surface stays honed
+marble — no pattern overlays, no star lattices.
 
 ## Develop
 

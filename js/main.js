@@ -278,7 +278,6 @@
     'hero-diya-br': 'Rose cluster · bottom right',
     'hero-lotus-bl': 'The courtyard bowl',
     'hero-lotus-br': 'Rose cluster · bottom right',
-    'hero-sparkle': 'Gold sparkles',
     'folio-quote': 'Keepsake quote card',
     'story-caption': 'Story inscription',
     'story-note': 'Story handwritten note',
@@ -871,7 +870,7 @@
     list.innerHTML = items.map(function (item) {
       return '<li class="day-word reveal">' +
         '<span class="day-word__bulb" aria-hidden="true">' +
-        '<svg viewBox="-12 -12 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle r="3.4"/><path d="M0 -10.5 V -6.6 M0 10.5 V 6.6 M-10.5 0 H -6.6 M10.5 0 H 6.6 M-7.4 -7.4 L -4.7 -4.7 M7.4 7.4 L 4.7 4.7 M-7.4 7.4 L -4.7 4.7 M7.4 -7.4 L 4.7 -4.7"/></svg></span>' +
+        '<svg viewBox="-12 -12 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M0 -9.6 C 2.5 -6.2 3.5 -3.8 3.5 -1.4 C 3.5 1.7 2 3.7 0 3.7 C -2 3.7 -3.5 1.7 -3.5 -1.4 C -3.5 -3.8 -2.5 -6.2 0 -9.6 Z"/><path d="M0 0.2 C 1.1 1.4 1.6 2.3 1.6 3.2"/><path d="M -6.8 7.4 H 6.8"/><path d="M -6.2 7.4 C -6.2 9.8 -3.5 11.2 0 11.2 C 3.5 11.2 6.2 9.8 6.2 7.4"/></svg></span>' +
         '<span class="day-word__text" data-editor-path="moments.' + item.index + '">' +
         escapeHTML(item.word.trim()) + '</span></li>';
     }).join('');

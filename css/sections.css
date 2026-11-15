@@ -5,9 +5,9 @@
    at first light: a cusped pishtaq arch crowns it and frames the
    dawn river, gemstone-inlay cascades spill from its corners,
    cypress trees stand sentinel at its sides. Paper chapters wear
-   an eight-point star jali ghost; night chapters glow with gold
-   lattice under a lapis dusk. Every colour is a token overwritten
-   at runtime by main.js applyTheme().
+   honed ivory marble; night chapters glow with candlelight under
+   a lapis dusk. Every colour is a token overwritten at runtime
+   by main.js applyTheme().
    ═══════════════════════════════════════════════════════════════ */
 
 /* ═══ SCENE FOUNDATION ══════════════════════════════════════════ */
@@ -27,10 +27,7 @@
   text-align: center;
 }
 
-/* the eight-point star jali — the geometry of the marble screens,
-   repeated as data-URI tiles in the scene backgrounds below */
-
-/* paper chapters — Makrana ivory, honed veining and an ink jali ghost */
+/* paper chapters — Makrana ivory, honed veining, quiet light */
 .scene--story, .scene--details, .scene--palette,
 .scene--venue, .scene--rsvp {
   overflow-x: hidden;
@@ -38,22 +35,20 @@
   background-image:
     url("assets/art/marble-texture.svg"),
     linear-gradient(112deg, transparent 46%, color-mix(in srgb, var(--charcoal) 7%, transparent) 47% 48%, transparent 49%),
-    linear-gradient(72deg, transparent 62%, color-mix(in srgb, var(--charcoal) 5%, transparent) 63% 64%, transparent 65%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%2333261B' stroke-opacity='.055'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: cover, auto, auto, auto;
-  background-blend-mode: soft-light, normal, normal, normal;
+    linear-gradient(72deg, transparent 62%, color-mix(in srgb, var(--charcoal) 5%, transparent) 63% 64%, transparent 65%);
+  background-size: cover, auto, auto;
+  background-blend-mode: soft-light, normal, normal;
 }
 
-/* night chapters — umber marble at dusk under a gold lattice */
+/* night chapters — umber marble at dusk, warm candle glow */
 .scene--std, .scene--itinerary, .scene--countdown, .scene--closing {
   background-color: var(--night);
   background-image:
     url("assets/art/marble-dusk.svg"),
     radial-gradient(120% 68% at 50% -8%, color-mix(in srgb, var(--burgundy) 22%, transparent) 0%, transparent 60%),
-    radial-gradient(80% 44% at 50% 110%, color-mix(in srgb, var(--champagne) 12%, transparent) 0%, transparent 66%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23C6A14F' stroke-opacity='.08'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: cover, auto, auto, auto;
-  background-blend-mode: soft-light, normal, normal, normal;
+    radial-gradient(80% 44% at 50% 110%, color-mix(in srgb, var(--champagne) 12%, transparent) 0%, transparent 66%);
+  background-size: cover, auto, auto;
+  background-blend-mode: soft-light, normal, normal;
 }
 
 /* the chapter divider — a running cusped-dome frieze where two
@@ -92,10 +87,9 @@
     url("assets/art/marble-texture.svg"),
     radial-gradient(110% 58% at 50% -4%, color-mix(in srgb, var(--rose) 52%, transparent) 0%, transparent 60%),
     radial-gradient(64% 36% at 50% 104%, color-mix(in srgb, var(--crimson) 14%, transparent) 0%, transparent 66%),
-    linear-gradient(178deg, var(--parchment) 0%, var(--ivory) 34%, var(--ivory) 100%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23A5823C' stroke-opacity='.06'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
-  background-size: cover, auto, auto, auto, auto;
-  background-blend-mode: soft-light, normal, normal, normal, normal;
+    linear-gradient(178deg, var(--parchment) 0%, var(--ivory) 34%, var(--ivory) 100%);
+  background-size: cover, auto, auto, auto;
+  background-blend-mode: soft-light, normal, normal, normal;
 }
 /* first-light halo behind the card */
 .kstage::before {
@@ -177,15 +171,6 @@
   box-shadow:
     inset 0 0 0 1px color-mix(in srgb, var(--champagne-soft) 58%, transparent),
     var(--shadow-card);
-}
-/* a faint star jali printed into the paper */
-.kcard::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%2333261B' stroke-opacity='.045'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
-  pointer-events: none;
 }
 
 /* ── the crown — the pishtaq arch over the dawn river ─────────── */
@@ -438,15 +423,6 @@
 .korn--gold-tl { top: -7%; left: -7%; width: 30%; opacity: .9; }
 .korn--gold-tr { top: -7%; right: -7%; width: 30%; transform: scaleX(-1); opacity: .9; }
 .korn--gold-bl, .korn--gold-br { display: none; }
-
-.korn--sparkle { top: 5%; right: -5%; left: auto; bottom: auto; width: 17%; height: auto; opacity: .6; }
-.gp-spark { fill: var(--champagne-soft); animation: kspark-blink 3.4s ease-in-out infinite; }
-.gp-spark-x { stroke: var(--champagne-soft); stroke-width: 1; animation: kspark-blink 4.2s ease-in-out .8s infinite; }
-.gp-spark-dot { fill: var(--champagne-soft); opacity: .8; }
-@keyframes kspark-blink {
-  0%, 100% { opacity: .25; }
-  50% { opacity: 1; }
-}
 
 /* hanging bud strings on the card shoulders */
 .gp-string { stroke: var(--gold-line); stroke-width: 1; fill: none; }
@@ -1102,9 +1078,7 @@
   to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* the shamsa rosette — gold star-of-eight lace (night scenes) */
-.lace-star { stroke: var(--gold-line); stroke-width: 1.1; fill: none; }
-.lace-star--inner { stroke: var(--gold-faint); stroke-width: .9; }
+/* the shamsa rosette — fine goldwork (night scenes) */
 .lace-ring { stroke: var(--gold-line); stroke-width: 1.2; fill: none; }
 .lace-ring--soft { stroke: var(--gold-faint); stroke-width: .8; }
 .lace-pearl { fill: var(--gilding-soft); stroke: none; }

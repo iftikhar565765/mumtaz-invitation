@@ -2,11 +2,10 @@
    MUMTAZ · envelope.css — the sealed letter at the great gate
    ---------------------------------------------------------------
    An ivory-silk envelope sealed with the gold dome seal, resting
-   at the great gate in lapis dusk: eight-point star jali lattice
-   glowing faintly, gemstone cascades at the edges, pearl motes
-   drifting, and a shamsa medallion of light behind. The flap's
-   liner is woven gold lattice — when it lifts, the garden of
-   inlay is the reveal.
+   at the great gate in lapis dusk: gemstone cascades at the edges,
+   pearl motes drifting, and a shamsa medallion of light behind.
+   The flap's liner is woven gold silk — when it lifts, the garden
+   of inlay is the reveal.
    Machinery unchanged: flap rotates on its top edge, the letter
    rises from the pocket, the seal breaks away. GSAP drives the
    same geometry; the CSS keyframes below are the no-GSAP twin.
@@ -27,14 +26,6 @@
     var(--night-deep);
   background-size: cover, auto, auto, auto;
   background-blend-mode: soft-light, normal, normal, normal;
-}
-/* faint eight-point star jali over the whole gate */
-.opening::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23C6A14F' stroke-opacity='.09'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
-  pointer-events: none;
 }
 
 .opening.is-leaving {
@@ -315,14 +306,6 @@
     linear-gradient(178deg, rgba(255, 252, 244, .4), transparent 22%);
 }
 
-/* faint gold star-jali printed on the silk pocket */
-.envelope__pocket-face::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23A5823C' stroke-opacity='.22'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E");
-}
-
 /* address plate — a fine ivory plaque on the silk */
 .envelope__address {
   position: absolute;
@@ -384,12 +367,10 @@
 }
 
 .envelope__flap-face {
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96'%3E%3Cg fill='none' stroke='%23A5823C' stroke-opacity='.26'%3E%3Cpolygon points='48 18 52.82 36.36 69.21 26.79 59.64 43.18 78 48 59.64 52.82 69.21 69.21 52.82 59.64 48 78 43.18 59.64 26.79 69.21 36.36 52.82 18 48 36.36 43.18 26.79 26.79 43.18 36.36'/%3E%3Cpolygon points='0 -30 4.82 -11.64 21.21 -21.21 11.64 -4.82 30 0 11.64 4.82 21.21 21.21 4.82 11.64 0 30 -4.82 11.64 -21.21 21.21 -11.64 4.82 -30 0 -11.64 -4.82 -21.21 -21.21 -4.82 -11.64'/%3E%3Cpolygon points='96 -30 100.82 -11.64 117.21 -21.21 107.64 -4.82 126 0 107.64 4.82 117.21 21.21 100.82 11.64 96 30 91.18 11.64 74.79 21.21 84.36 4.82 66 0 84.36 -4.82 74.79 -21.21 91.18 -11.64'/%3E%3Cpolygon points='0 66 4.82 84.36 21.21 74.79 11.64 91.18 30 96 11.64 100.82 21.21 117.21 4.82 107.64 0 126 -4.82 107.64 -21.21 117.21 -11.64 100.82 -30 96 -11.64 91.18 -21.21 74.79 -4.82 84.36'/%3E%3Cpolygon points='96 66 100.82 84.36 117.21 74.79 107.64 91.18 126 96 107.64 100.82 117.21 117.21 100.82 107.64 96 126 91.18 107.64 74.79 117.21 84.36 100.82 66 96 84.36 91.18 74.79 74.79 91.18 84.36'/%3E%3C/g%3E%3C/svg%3E"),
-    linear-gradient(184deg,
-      color-mix(in srgb, var(--parchment) 84%, var(--champagne-soft) 10%) 0%,
-      color-mix(in srgb, var(--parchment) 76%, var(--ivory) 24%) 46%,
-      color-mix(in srgb, var(--parchment) 66%, var(--champagne-soft) 20%) 100%);
+  background: linear-gradient(184deg,
+    color-mix(in srgb, var(--parchment) 84%, var(--champagne-soft) 10%) 0%,
+    color-mix(in srgb, var(--parchment) 76%, var(--ivory) 24%) 46%,
+    color-mix(in srgb, var(--parchment) 66%, var(--champagne-soft) 20%) 100%);
   box-shadow:
     inset 0 0 0 1px color-mix(in srgb, var(--champagne-soft) 52%, transparent),
     inset 0 10px 22px rgba(255, 252, 244, .24);
@@ -408,9 +389,16 @@
 
 .envelope__flap-liner {
   transform: rotateX(180deg);
+  /* woven dupioni silk — hairline warp and weft in champagne,
+     tone-on-tone, so the lifted flap reads as cloth, not print */
   background:
     radial-gradient(130% 110% at 50% 0%, rgba(255, 251, 244, .5), transparent 62%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cg fill='none' stroke='%23A5823C' stroke-opacity='.5'%3E%3Cpolygon points='24 9 26.4 18.2 35 13.4 30.2 22.6 39.4 25 30.2 27.4 35 36.6 26.4 31.8 24 41 21.6 31.8 13 36.6 17.8 27.4 8.6 25 17.8 22.6 13 13.4 21.6 18.2'/%3E%3Cpolygon points='-24 -15 -21.6 -5.8 -13 -10.6 -17.8 -1.4 -8.6 1 -17.8 3.4 -13 12.6 -21.6 7.8 -24 17'/%3E%3Cpolygon points='72 -15 74.4 -5.8 83 -10.6 78.2 -1.4 87.4 1 78.2 3.4 83 12.6 74.4 7.8 72 17'/%3E%3Cpolygon points='-24 33 -21.6 42.2 -13 37.4 -17.8 46.6 -8.6 49 -17.8 51.4 -13 60.6 -21.6 55.8 -24 65'/%3E%3Cpolygon points='72 33 74.4 42.2 83 37.4 78.2 46.6 87.4 49 78.2 51.4 83 60.6 74.4 55.8 72 65'/%3E%3C/g%3E%3C/svg%3E"),
+    repeating-linear-gradient(90deg,
+      color-mix(in srgb, var(--champagne) 22%, transparent) 0 1px,
+      transparent 1px 6px),
+    repeating-linear-gradient(0deg,
+      color-mix(in srgb, var(--champagne) 16%, transparent) 0 1px,
+      transparent 1px 8px),
     linear-gradient(184deg,
       color-mix(in srgb, var(--parchment) 90%, var(--champagne) 10%) 0%,
       color-mix(in srgb, var(--parchment) 74%, var(--champagne) 26%) 100%);

@@ -95,7 +95,6 @@
     'details-art-rings': 'Crest · wedding rings',
     'details-art-mono': 'Crest · monogram',
     'details-art-date': 'Crest · date ribbon',
-    'details-art-sparkles': 'Crest · sparkles',
     'palette-dresscode': 'Dress code card',
     'day-words': 'Wedding-day words',
     'rsvp-watermark': 'RSVP watermark',
