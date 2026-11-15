@@ -182,21 +182,36 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: clamp(18px, 4vw, 34px) 8% 0;
+  padding: clamp(10px, 2.2vw, 20px) 4.4% 0;
+}
+/* the dawn river glowing inside the gateway arch */
+.kcard__crown::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 16%;
+  transform: translateX(-50%);
+  width: 58%;
+  aspect-ratio: 1 / 1.1;
+  background: radial-gradient(50% 46% at 50% 66%,
+    color-mix(in srgb, var(--ember) 26%, transparent) 0%,
+    color-mix(in srgb, var(--champagne) 14%, transparent) 46%,
+    transparent 74%);
+  filter: blur(6px);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .kcard__pishtaq {
+  position: relative;
   display: block;
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 16px 34px rgba(38, 27, 16, .28));
+  z-index: 1;
+  filter: drop-shadow(0 16px 30px rgba(38, 27, 16, .18));
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 90%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 0%, #000 90%, transparent 100%);
 }
-.pishtaq-veil { fill: url(#pishtaq-dawn); }
-.pishtaq-glow { fill: url(#pishtaq-halo); }
-.pishtaq-frame { fill: none; }
-.pishtaq-frame--inner { stroke: var(--champagne-soft); stroke-width: 2; }
-.pishtaq-frame--mid   { stroke: var(--gold-line);      stroke-width: 1.1; }
-.pishtaq-frame--outer { stroke: var(--champagne-soft); stroke-width: 1.4; opacity: .85; }
 
 .kcard-medallion { position: relative; display: grid; justify-items: center; margin-top: calc(-1 * clamp(16px, 3.6vw, 30px)); }
 .kcard-medallion__glyph {
@@ -1214,38 +1229,38 @@
 
 .scene--closing { overflow: hidden; }
 
-/* the moonlit Taj — an arched plate above the last words */
+/* the moonlit pavilion — carved marble glowing above the last words */
 .closing-plate {
   position: relative;
   z-index: 1;
-  width: min(560px, 92%);
-  aspect-ratio: 100 / 74;
+  width: min(430px, 82%);
   margin: 0 auto clamp(26px, 4vh, 40px);
   pointer-events: none;
 }
-.closing-plate__art {
+/* a soft aura of candlelight breathing around the pavilion */
+.closing-plate::before {
+  content: "";
   position: absolute;
-  inset: 0;
+  inset: -14% -26%;
+  background: radial-gradient(50% 44% at 50% 60%,
+    color-mix(in srgb, var(--ember) 20%, transparent) 0%,
+    color-mix(in srgb, var(--ember) 8%, transparent) 44%,
+    transparent 72%);
+  z-index: -1;
+  pointer-events: none;
+}
+.closing-plate__art {
+  display: block;
   width: 100%;
-  height: 100%;
-  background:
-    url("assets/art/marble-dusk.svg"),
-    radial-gradient(88% 62% at 50% 88%, color-mix(in srgb, var(--champagne) 16%, transparent) 0%, transparent 66%),
-    linear-gradient(180deg, color-mix(in srgb, var(--night) 86%, black) 0%, var(--night) 100%);
-  background-size: cover, auto, auto;
-  background-blend-mode: soft-light, normal, normal;
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='74' viewBox='0 0 100 74'%3E%3Cpath fill='%23fff' d='M 0 74 L 0 30 C 4.62 31.97 9.32 20.97 4.7 19 C 7.75 23.1 17.51 15.81 14.45 11.72 C 16.33 16.49 27.7 12.02 25.82 7.24 C 26.85 12.27 38.83 9.82 37.8 4.79 C 38.13 9.91 50.33 9.13 50 4 C 49.67 9.13 61.87 9.91 62.2 4.79 C 61.17 9.82 73.15 12.27 74.18 7.24 C 72.3 12.02 83.67 16.49 85.55 11.72 C 82.49 15.81 92.25 23.1 95.3 19 C 90.68 20.97 95.38 31.97 100 30 L 100 74 Z'/%3E%3C/svg%3E");
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='74' viewBox='0 0 100 74'%3E%3Cpath fill='%23fff' d='M 0 74 L 0 30 C 4.62 31.97 9.32 20.97 4.7 19 C 7.75 23.1 17.51 15.81 14.45 11.72 C 16.33 16.49 27.7 12.02 25.82 7.24 C 26.85 12.27 38.83 9.82 37.8 4.79 C 38.13 9.91 50.33 9.13 50 4 C 49.67 9.13 61.87 9.91 62.2 4.79 C 61.17 9.82 73.15 12.27 74.18 7.24 C 72.3 12.02 83.67 16.49 85.55 11.72 C 82.49 15.81 92.25 23.1 95.3 19 C 90.68 20.97 95.38 31.97 100 30 L 100 74 Z'/%3E%3C/svg%3E");
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  filter: drop-shadow(0 10px 26px rgba(24, 17, 10, .5));
+  height: auto;
+  filter: drop-shadow(0 18px 42px rgba(12, 8, 4, .55));
 }
 .closing-plate__shamsa {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 34%;
+  width: 30%;
 }
 
 /* a fine goldwork corner at the closing's shoulder */
@@ -1340,7 +1355,7 @@
 .korn, .kstage__mandala, .countdown-wreath, .venue-urli, .venue-cypress,
 .std-emblem, .kcard-lotus, .kcard-date-orn, .footer-ornament,
 .rsvp-ornament svg, .story-quote__rule, .story-caption svg,
-.dresscode-orn, .closing-bloom--r, .closing-plate__img {
+.dresscode-orn, .closing-bloom--r {
   height: auto;
 }
 .envelope-lace { height: auto; }
